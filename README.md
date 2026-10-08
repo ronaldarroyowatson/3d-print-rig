@@ -15,6 +15,7 @@ in the viewer's **Official data** and third-party notices.
 ## Explore
 
 - [Viewer](https://psych0h3ad.github.io/3d-print-rig/viewer/): choose a machine and size, inspect its CAD, colors and registered motion. Shared printer/head/Monolith configuration controls show proposed changes before **Apply**; V0 uses its own Mod controls.
+- [Custom component presets](https://psych0h3ad.github.io/3d-print-rig/viewer/custom-components.html): owner extension-layer records for planned components, compatibility scope and direct workspace links.
 - [Combination support / 組み合わせ対応状況](https://psych0h3ad.github.io/3d-print-rig/support/): filter the current registered combinations, inspect installation and dock limitations, and open a matching configuration. Includes stock-only and CAD-unregistered specifications. [Status definitions and scope](docs/COMBINATION_SUPPORT.md).
 - [Just for fun](https://psych0h3ad.github.io/3d-print-rig/fun/): CAD-derived assembly, exploded, section and collection wallpapers for phones, desktops and ultrawide screens. [Credits and maintenance](docs/WALLPAPERS.md).
 - [Embed a viewer](docs/EMBEDDING.md): Share → Embed creates a responsive iframe. **Alpha test**; future viewer/model updates apply while registered machine and configuration IDs are retained.

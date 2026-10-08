@@ -54,6 +54,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--regression-workers', type=int, choices=range(1, 9), default=4)
     args = parser.parse_args()
+    subprocess.run([sys.executable, str(ROOT / 'tools/validation/check_custom_extensions.py')],
+                   cwd=ROOT, check=True)
     tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
     paths = [Path(name) for name in tracked if name]
     if not paths:

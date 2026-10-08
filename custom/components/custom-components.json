@@ -1,0 +1,169 @@
+{
+  "schema": "3d-print-rig-custom-components-v1",
+  "version": "owner-initial-components-v1",
+  "components": [
+    {
+      "id": "cartographer",
+      "label": "Cartographer",
+      "type": "probe",
+      "status": "planned",
+      "compatibility": {
+        "machine_families": [
+          "trident",
+          "v24",
+          "micron"
+        ],
+        "toolheads": [
+          "xol",
+          "stealthburner",
+          "trinity",
+          "trinity_crossbow"
+        ]
+      },
+      "render_targets": [
+        {
+          "label": "Toolhead builder",
+          "path": "./toolheads.html"
+        },
+        {
+          "label": "Trident printer workspace",
+          "path": "./trident.html",
+          "machine": "voron_trident_350"
+        }
+      ],
+      "component_catalog_ids": [
+        "xol_cartographer_v4",
+        "sphinx_cartographer_v4"
+      ],
+      "notes": "Use existing Cartographer-capable head assemblies as baseline during migration."
+    },
+    {
+      "id": "beacon",
+      "label": "Beacon",
+      "type": "probe",
+      "status": "planned",
+      "compatibility": {
+        "machine_families": [
+          "trident",
+          "v24",
+          "micron"
+        ],
+        "toolheads": [
+          "xol",
+          "stealthburner",
+          "trinity",
+          "trinity_crossbow"
+        ]
+      },
+      "render_targets": [
+        {
+          "label": "Toolhead builder",
+          "path": "./toolheads.html"
+        },
+        {
+          "label": "Component CAD",
+          "path": "./components.html"
+        }
+      ],
+      "component_catalog_ids": [
+        "xol_beacon_revd_uhf",
+        "xol_beacon_revh_uhf"
+      ],
+      "notes": "Beacon variants are already represented in multiple assemblies; this extension centralizes owner presets."
+    },
+    {
+      "id": "galileo2",
+      "label": "Galileo 2",
+      "type": "extruder",
+      "status": "planned",
+      "compatibility": {
+        "machine_families": [
+          "trident",
+          "v24",
+          "v0",
+          "micron"
+        ],
+        "toolheads": [
+          "xol",
+          "stealthburner",
+          "dragonburner"
+        ]
+      },
+      "render_targets": [
+        {
+          "label": "Toolhead builder",
+          "path": "./toolheads.html"
+        },
+        {
+          "label": "V0 workspace",
+          "path": "./v0.html",
+          "machine": "voron_v02r1_120"
+        }
+      ],
+      "component_catalog_ids": [
+        "galileo2_installed"
+      ],
+      "notes": "Galileo 2 support is tracked as owner-preferred extruder profiles."
+    },
+    {
+      "id": "ebb42",
+      "label": "EBB42",
+      "type": "electronics-board",
+      "status": "planned",
+      "compatibility": {
+        "machine_families": [
+          "trident",
+          "v24",
+          "v0",
+          "micron",
+          "community"
+        ],
+        "toolheads": [
+          "xol",
+          "stealthburner",
+          "dragonburner",
+          "e3ng"
+        ]
+      },
+      "render_targets": [
+        {
+          "label": "E3NG board workspace",
+          "path": "./e3ng.html"
+        },
+        {
+          "label": "Toolhead builder",
+          "path": "./toolheads.html"
+        }
+      ],
+      "component_catalog_ids": [],
+      "notes": "This extension tracks board-centric compatibility and migration tasks."
+    },
+    {
+      "id": "nevermore",
+      "label": "Nevermore",
+      "type": "accessory",
+      "status": "planned",
+      "compatibility": {
+        "machine_families": [
+          "trident",
+          "v24"
+        ],
+        "toolheads": []
+      },
+      "render_targets": [
+        {
+          "label": "Trident printer workspace",
+          "path": "./trident.html",
+          "machine": "voron_trident_350"
+        },
+        {
+          "label": "V2.4 printer workspace",
+          "path": "./v24.html",
+          "machine": "siboor_v24_350"
+        }
+      ],
+      "component_catalog_ids": [],
+      "notes": "Nevermore is tracked as a machine-level accessory extension."
+    }
+  ]
+}

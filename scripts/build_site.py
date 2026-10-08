@@ -5,6 +5,7 @@ import json
 import math
 import shutil
 import subprocess
+import sys
 import tempfile
 import urllib.request
 import zipfile
@@ -282,6 +283,8 @@ def main():
             unpack_assets(archive, target)
     validate_mounting_evidence(target)
     merge_components(target)
+    subprocess.run([sys.executable, str(ROOT / 'scripts/apply_custom_extensions.py'),
+                    '--output', str(target)], cwd=ROOT, check=True)
     subprocess.run(['node', '--experimental-loader', './scripts/three-test-loader.mjs',
                     'scripts/build_support_catalog.mjs', str(target)], cwd=ROOT, check=True)
     (target / '.nojekyll').touch()

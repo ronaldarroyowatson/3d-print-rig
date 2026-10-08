@@ -64,6 +64,7 @@
 | 段階移行の実行計画 | [Migration roadmap](migration-roadmap.md) |
 | コア改変なしで拡張する構成案 | [Custom extension system](custom-extension-system.md) |
 | 追加予定部品のギャップ分析 | [Missing components](missing-components.md) |
+| 拡張レイヤー向けの検証フロー | [Validation system](validation-system.md) |
 
 [プロジェクトREADMEに戻る](../README.md)
 

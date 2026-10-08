@@ -1,0 +1,27 @@
+{
+  "schema": "3d-print-rig-json-overlay-v1",
+  "append_unique": {
+    "sources": [
+      {
+        "id": "owner_cartographer_extension",
+        "label": "Owner extension · Cartographer integration planning",
+        "repository": "ronaldarroyowatson/3d-print-rig",
+        "author": "ronaldarroyowatson",
+        "commit": "custom-extension-layer",
+        "url": "https://github.com/ronaldarroyowatson/3d-print-rig",
+        "scope": "Owner-defined extension metadata and compatibility planning for Cartographer workflows.",
+        "license": "MIT (fork-level custom metadata)"
+      },
+      {
+        "id": "owner_beacon_extension",
+        "label": "Owner extension · Beacon integration planning",
+        "repository": "ronaldarroyowatson/3d-print-rig",
+        "author": "ronaldarroyowatson",
+        "commit": "custom-extension-layer",
+        "url": "https://github.com/ronaldarroyowatson/3d-print-rig",
+        "scope": "Owner-defined extension metadata and compatibility planning for Beacon workflows.",
+        "license": "MIT (fork-level custom metadata)"
+      }
+    ]
+  }
+}

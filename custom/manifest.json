@@ -1,0 +1,17 @@
+{
+  "schema": "3d-print-rig-custom-extensions-v1",
+  "version": "owner-custom-v1",
+  "enabled": true,
+  "json_overlays": [
+    {
+      "target": "HEAD_ADDITIONS.json",
+      "source": "overlays/head-additions.sources.json"
+    }
+  ],
+  "generated_files": [
+    {
+      "source": "components/custom-components.json",
+      "target": "CUSTOM_COMPONENTS.json"
+    }
+  ]
+}

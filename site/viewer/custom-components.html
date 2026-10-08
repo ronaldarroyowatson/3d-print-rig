@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="./display-start.js?v=2ccf9c125fa0c4f73dc1">
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Custom Components · 3D Print Rig</title>
+<link rel="stylesheet" href="./viewer.css?v=workspace-belts-1">
+<link rel="stylesheet" href="./workspace.css?v=afe321bd2fdaf8d2c23b">
+</head>
+<body class="toolhead-viewer">
+<header>
+<div class="brand">
+<span class="brand-mark">PR</span>
+<div>
+<strong>3D Print Rig</strong>
+<small>CUSTOM COMPONENT PRESETS</small>
+</div>
+</div>
+<div class="header-actions">
+<a class="mode-link" href="./toolheads.html">Build a head</a>
+<a class="mode-link" href="./components.html">Component CAD</a>
+<a class="mode-link" href="./">Printer</a>
+</div>
+</header>
+<main class="workspace">
+<aside>
+<h1>Owner custom component presets</h1>
+<p class="foot">Extension-layer definitions for personal printer ecosystem planning. These records are additive and do not modify core catalogs.</p>
+<label for="familyFilter">Machine family</label>
+<select id="familyFilter">
+  <option value="all">All families</option>
+  <option value="trident">Trident</option>
+  <option value="v24">V2.4</option>
+  <option value="v0">V0</option>
+  <option value="micron">Micron</option>
+  <option value="community">Community</option>
+</select>
+<p class="status" id="componentPresetStatus" aria-live="polite">Loading custom presets…</p>
+<p class="foot" id="componentPresetSummary"></p>
+<a class="workbench-link" href="./toolheads.html">Open toolhead combinations with mounting checks</a>
+<a class="workbench-link" href="./components.html">Open source component CAD browser</a>
+</aside>
+<section id="stage" aria-label="Custom component presets">
+  <div id="customComponentCards" class="preset-grid"></div>
+</section>
+</main>
+<script type="module" data-controller="./custom-components.js?v=owner-custom-1" src="./workspace-router.mjs?v=5657ffc7b2c64d0404c5">
+</script>
+</body>
+</html>
