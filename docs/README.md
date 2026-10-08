@@ -62,6 +62,8 @@
 | 技術的負債の優先度評価 | [Technical debt report](technical-debt-report.md) |
 | 長期運用向けの目標構成 | [Target architecture](target-architecture.md) |
 | 段階移行の実行計画 | [Migration roadmap](migration-roadmap.md) |
+| コア改変なしで拡張する構成案 | [Custom extension system](custom-extension-system.md) |
+| 追加予定部品のギャップ分析 | [Missing components](missing-components.md) |
 
 [プロジェクトREADMEに戻る](../README.md)
 
