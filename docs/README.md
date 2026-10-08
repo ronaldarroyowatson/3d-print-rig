@@ -52,6 +52,17 @@
 | 5言語の文言更新と翻訳チェック | [Translating](TRANSLATING.md) |
 | 原作者・ライセンス・原本と表示モデルの差 | [Third-party notices](THIRD_PARTY_NOTICES.md) |
 
+## フォーク運用と将来設計（Owner fork planning）
+
+| 目的 | 資料 |
+| --- | --- |
+| ライセンス、帰属、所有戦略 | [Licensing and ownership](licensing-and-ownership.md) |
+| ベースライン保存と構成の現状分析 | [Baseline analysis](baseline-analysis.md) |
+| 実装アーキテクチャの逆解析 | [Architecture review](architecture-review.md) |
+| 技術的負債の優先度評価 | [Technical debt report](technical-debt-report.md) |
+| 長期運用向けの目標構成 | [Target architecture](target-architecture.md) |
+| 段階移行の実行計画 | [Migration roadmap](migration-roadmap.md) |
+
 [プロジェクトREADMEに戻る](../README.md)
 
 - [SOVOL SV08](SOVOL.md): complete native CAD reference, XYZ motion, source scope and display controls.
