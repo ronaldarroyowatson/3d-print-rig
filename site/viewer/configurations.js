@@ -8,6 +8,7 @@ import {monolithConfigurationRequest} from './monolith-machine-model.mjs?v=c4eef
 import {catalogDimensions,collections,resolveVariant,choicesFor,choiceChanges,importedVariant,configurationById} from './configuration-model.js?v=d4b3dda97a404a7575b7';
 import {probeCheck,probeOptionSuffix,headBodyCollisionNotes} from './probe-checks.js?v=ea1aef3e30bf7d11d3cb';
 import {renderProductLinks} from './product-links.js?v=ba0e9d9c9326819ea0fb';
+import {loadCustomComponentCatalog,compatibleCustomComponents,renderTargetURL} from './custom-component-model.mjs?v=owner-custom-2';
 import {headWitnessCheck}from './head-validation.mjs?v=workspace-belts-1';
 import {createHeadInspection}from './head-validation-ui.mjs?v=workspace-belts-1';
 
@@ -15,7 +16,34 @@ export async function setupConfigurations(catalog,install,{presentation='printer
  const $=s=>document.querySelector(s);
  const inspection=createHeadInspection($('#configStatus'),{setPose:inspectPose});
  let productTarget=$('#headProductLinks');if(!productTarget){productTarget=document.createElement('div');productTarget.id='configurationProductLinks';$('#configStatus').after(productTarget)}
+ let customTarget=$('#configurationCustomComponents');if(!customTarget){customTarget=document.createElement('div');customTarget.id='configurationCustomComponents';customTarget.hidden=true;productTarget.after(customTarget)}
  const ids=catalogDimensions(catalog).filter(id=>catalog[collections[id]]&&$('#'+id+'Config'));
+ const customCatalog=await loadCustomComponentCatalog().catch(()=>null);
+ function renderCustomMatches(v){
+  if(!customCatalog){customTarget.hidden=true;customTarget.replaceChildren();return}
+  const rows=compatibleCustomComponents(customCatalog,{machineId:catalog.machine_id||'',variant:v});
+  if(!rows.length){customTarget.hidden=true;customTarget.replaceChildren();return}
+  const heading=document.createElement('p');heading.className='foot';heading.textContent='Owner custom presets compatible with this selection';
+  const list=document.createElement('ul');list.className='foot';
+  for(const row of rows){
+   const item=document.createElement('li');
+   const title=document.createElement('strong');title.textContent=row.label;
+   item.append(title,` (${row.type})`);
+   const targets=row.render_targets||[];
+   if(targets.length){
+    item.append(' — ');
+    targets.forEach((target,index)=>{
+     const link=document.createElement('a');
+     link.href=renderTargetURL(target,location.href);
+     link.textContent=target.label;
+     item.append(link);
+     if(index<targets.length-1)item.append(' · ');
+    });
+   }
+   list.append(item);
+  }
+  customTarget.replaceChildren(heading,list);customTarget.hidden=false;
+ }
  let actual,busy=false,undoState,editor;
  const query=new URLSearchParams(location.search);
  const requestedId=query.get('configuration'),matched=configurationById(catalog,requestedId);
@@ -44,6 +72,7 @@ export async function setupConfigurations(catalog,install,{presentation='printer
   actual=v;draft.reset(v);menus(v);
   const headLabel=$('#machineHeadLabel');if(headLabel)headLabel.textContent=['toolhead','extruder','hotend'].map(id=>catalog[collections[id]].find(row=>row.id===v[id])?.label||v[id]).join(' / ');
   renderProductLinks(productTarget,{hotend:v.hotend,toolhead:v.toolhead,extruder:v.extruder});
+  renderCustomMatches(v);
   const url=new URL(location.href);url.searchParams.delete('mount');if(catalog.machine_id!=='monolith_workbench'){url.searchParams.delete('gantry');url.searchParams.delete('head_configuration')}url.searchParams.set('configuration',v.id);replaceWorkspaceURL(null,'',url);
   $('#configSummary').textContent=ids.map(id=>catalog[collections[id]].find(row=>row.id===v[id]).label).join(' ／ ');
   $('#configRequirements').replaceChildren(...v.notes.map(note=>{const li=document.createElement('li');li.textContent=note;return li}));

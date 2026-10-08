@@ -1,14 +1,9 @@
 import {ensureWorkspaceEntry} from './workspace-entry.mjs';
 ensureWorkspaceEntry(import.meta.url);
 import {replaceWorkspaceURL} from './workspace-navigation.mjs?v=424451cc1e036690fee7';
+import {loadCustomComponentCatalog,renderTargetURL} from './custom-component-model.mjs?v=owner-custom-2';
 
 const familyOrder = ['trident', 'v24', 'v0', 'micron', 'community'];
-
-function cardLink(target) {
-  const url = new URL(target.path, location.href);
-  if (target.machine) url.searchParams.set('machine', target.machine);
-  return url.href;
-}
 
 function badge(text) {
   const span = document.createElement('span');
@@ -38,7 +33,7 @@ function drawCards(container, rows) {
     for (const target of row.render_targets || []) {
       const a = document.createElement('a');
       a.className = 'workbench-link';
-      a.href = cardLink(target);
+      a.href = renderTargetURL(target, location.href);
       a.textContent = target.label;
       links.append(a);
     }
@@ -54,12 +49,7 @@ export async function mount() {
   const list = $('customComponentCards');
   const familyFilter = $('familyFilter');
   try {
-    const response = await fetch('../CUSTOM_COMPONENTS.json', {cache: 'no-cache'});
-    if (!response.ok) throw Error('Custom component presets are unavailable.');
-    const data = await response.json();
-    if (data.schema !== '3d-print-rig-custom-components-v1') {
-      throw Error('Custom component schema is invalid.');
-    }
+    const data = await loadCustomComponentCatalog();
     const all = [...data.components].sort((a, b) => {
       const aa = familyOrder.findIndex(v => (a.compatibility.machine_families || []).includes(v));
       const bb = familyOrder.findIndex(v => (b.compatibility.machine_families || []).includes(v));

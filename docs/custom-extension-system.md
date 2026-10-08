@@ -68,6 +68,11 @@ Injection points:
 - support index generation (`build_support_catalog.mjs`)
 - runtime catalog fetch artifacts under `site/`
 
+Implemented initial runtime surfaces:
+
+- [custom-components.html](../site/viewer/custom-components.html) renders owner extension presets.
+- [configurations.js](../site/viewer/configurations.js) now shows compatible owner presets for the active head selection using shared matcher logic in [custom-component-model.mjs](../site/viewer/custom-component-model.mjs).
+
 ## Validation rules (extension-specific)
 
 Add checks in `tools/validation/`:
