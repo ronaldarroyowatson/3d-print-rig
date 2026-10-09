@@ -5,11 +5,14 @@
 
 ## Context
 
-Runtime code has grown around page-centric controllers under `site/viewer/`. This works, but increases coupling and review complexity as feature count rises.
+Runtime code has grown around page-centric controllers under `site/viewer/`.
+This works, but increases coupling and review complexity as feature count
+rises.
 
 ## Decision
 
 Adopt an incremental migration path toward feature-first architecture:
+
 - preferred target:
   - `src/features`
   - `src/shared`
@@ -23,8 +26,10 @@ Adopt an incremental migration path toward feature-first architecture:
 ## Consequences
 
 Positive:
+
 - clearer ownership boundaries
 - easier onboarding and refactor safety
 
 Trade-offs:
+
 - temporary mixed architecture during migration period
