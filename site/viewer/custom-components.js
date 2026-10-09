@@ -60,7 +60,10 @@ export async function mount() {
       const selected = familyFilter.value;
       const rows = selected === 'all' ? all : all.filter(row => (row.compatibility.machine_families || []).includes(selected));
       drawCards(list, rows);
-      status.textContent = `Loaded ${rows.length} preset${rows.length === 1 ? '' : 's'}.`;
+      const scope = selected === 'all'
+        ? 'all families'
+        : [...familyFilter.options].find(option => option.value === selected)?.textContent || selected;
+      status.textContent = `Loaded ${rows.length} of ${all.length} preset${all.length === 1 ? '' : 's'} for ${scope}.`;
       summary.textContent = `Schema ${data.schema} · version ${data.version}`;
       const url = new URL(location.href);
       if (selected === 'all') url.searchParams.delete('family');

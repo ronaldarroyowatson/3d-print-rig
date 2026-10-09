@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CUSTOM = ROOT / 'custom'
 MANIFEST = CUSTOM / 'manifest.json'
 COMPONENTS = CUSTOM / 'components' / 'custom-components.json'
+SITE_COMPONENTS = ROOT / 'site' / 'CUSTOM_COMPONENTS.json'
 
 ALLOWED_PATHS = {
     './toolheads.html',
@@ -80,8 +81,14 @@ def main():
         fail('Missing custom/manifest.json')
     if not COMPONENTS.is_file():
         fail('Missing custom/components/custom-components.json')
+    if not SITE_COMPONENTS.is_file():
+        fail('Missing site/CUSTOM_COMPONENTS.json')
     validate_manifest(load_json(MANIFEST))
-    validate_components(load_json(COMPONENTS))
+    components = load_json(COMPONENTS)
+    validate_components(components)
+    site_components = load_json(SITE_COMPONENTS)
+    if site_components != components:
+        fail('site/CUSTOM_COMPONENTS.json must mirror custom/components/custom-components.json')
     print('Custom extension validation passed.')
 
 

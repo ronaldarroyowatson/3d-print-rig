@@ -13,6 +13,8 @@ function assertComponentSchema(data) {
 }
 
 export async function loadCustomComponentCatalog() {
+  // Built site output always publishes CUSTOM_COMPONENTS.json. For source-only
+  // local previews, keep a mirrored file in site/ as the same runtime input.
   const response = await fetch('../CUSTOM_COMPONENTS.json', {cache: 'no-cache'});
   if (!response.ok) throw Error('Custom component presets are unavailable.');
   const data = await response.json();

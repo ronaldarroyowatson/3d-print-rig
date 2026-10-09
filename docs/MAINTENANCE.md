@@ -93,6 +93,23 @@ input, and generates `support/data/`. To reuse an already downloaded archive:
 python scripts/build_site.py --output ../rig-preview-local --assets ../viewer-models.zip
 ```
 
+Tooling policy for this fork:
+
+1. **Default path**: always run `build_site.py` (or `build_site.py --assets ...`)
+   for local preview and verification.
+2. **Fallback path**: use the bootstrap helper only when the default path
+   cannot run in the current environment (for example, Python unavailable).
+
+Fallback helper:
+
+```sh
+powershell -ExecutionPolicy Bypass -File scripts/bootstrap_local_preview.ps1
+python -m http.server 8000 --directory ../rig-preview-source
+```
+
+This helper is intentionally limited to local preview setup. It does not
+replace `build_site.py`, full model-bundle validation, or publication evidence.
+
 Before using `--assets` for release verification, compare that archive's bytes
 and SHA-256 with `site/ASSET_BUNDLE.json`. The local path still verifies the
 internal manifest, but bypasses the download's outer archive hash check. Do not

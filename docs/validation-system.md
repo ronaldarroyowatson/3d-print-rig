@@ -9,6 +9,7 @@ Current implementation:
 - [check_custom_extensions.py](D:/ronal/Documents/3d-print-rig.worktrees/2/tools/validation/check_custom_extensions.py)
   - validates [custom/manifest.json](D:/ronal/Documents/3d-print-rig.worktrees/2/custom/manifest.json)
   - validates [custom/components/custom-components.json](D:/ronal/Documents/3d-print-rig.worktrees/2/custom/components/custom-components.json)
+  - validates [site/CUSTOM_COMPONENTS.json](D:/ronal/Documents/3d-print-rig.worktrees/2/site/CUSTOM_COMPONENTS.json) mirrors owner source definitions
   - checks schema, duplicate IDs, path safety, and allowed navigation targets
 
 Integrated gates:
@@ -27,7 +28,7 @@ Build integration:
 
 Generated into build output:
 
-- `CUSTOM_COMPONENTS.json` (from owner custom component definitions)
+- [site/CUSTOM_COMPONENTS.json](D:/ronal/Documents/3d-print-rig.worktrees/2/site/CUSTOM_COMPONENTS.json) (runtime mirror of owner custom component definitions)
 - merged additions in `HEAD_ADDITIONS.json` for custom source attribution metadata
 
 ## Planned validation expansion

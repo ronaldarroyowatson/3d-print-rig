@@ -72,6 +72,7 @@ Implemented initial runtime surfaces:
 
 - [custom-components.html](../site/viewer/custom-components.html) renders owner extension presets.
 - [configurations.js](../site/viewer/configurations.js) now shows compatible owner presets for the active head selection using shared matcher logic in [custom-component-model.mjs](../site/viewer/custom-component-model.mjs).
+- [site/CUSTOM_COMPONENTS.json](../site/CUSTOM_COMPONENTS.json) is the committed runtime mirror for source-mode local preview and assembled-site parity; it must match [custom/components/custom-components.json](../custom/components/custom-components.json).
 
 ## Validation rules (extension-specific)
 

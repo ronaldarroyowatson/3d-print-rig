@@ -19,6 +19,7 @@
 
 # Locally imported assembly metadata.
 /site/*.json
+!/site/CUSTOM_COMPONENTS.json
 !/site/PUBLIC_CATALOG.json
 !/site/COMPONENT_ADDITIONS.json
 !/site/HEAD_ADDITIONS.json

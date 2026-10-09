@@ -51,3 +51,21 @@ support index. A source-only `site/` preview lacks those models and generated
 support data. New site files must be staged because the build copies tracked
 files. See [maintenance](docs/MAINTENANCE.md) for local bundle use, validation
 and publication steps.
+
+Default local workflow: use the canonical build tooling first.
+
+```sh
+python scripts/build_site.py --output ../rig-preview
+python -m http.server 8000 --directory ../rig-preview
+```
+
+Use the Windows bootstrap helper only when the canonical build cannot be used
+(for example, Python unavailable in the local environment):
+
+```sh
+powershell -ExecutionPolicy Bypass -File scripts/bootstrap_local_preview.ps1
+python -m http.server 8000 --directory ../rig-preview-source
+```
+
+This bootstrap mirrors the pinned bundle flow for local preview, but it is not
+a replacement for `build_site.py` release verification.
