@@ -65,6 +65,10 @@
 | コア改変なしで拡張する構成案 | [Custom extension system](custom-extension-system.md) |
 | 追加予定部品のギャップ分析 | [Missing components](missing-components.md) |
 | 拡張レイヤー向けの検証フロー | [Validation system](validation-system.md) |
+| 現在実装の棚卸し（構造・運用・検証） | [Current state analysis](current-state-analysis.md) |
+| Copilot標準への準拠監査（スコアカード） | [Copilot compliance report](copilot-compliance-report.md) |
+| 優先度付きリファクタ計画 | [Refactor backlog](refactor-backlog.md) |
+| 主要設計判断の記録 | [ADR index](adr/README.md) |
 
 [プロジェクトREADMEに戻る](../README.md)
 
