@@ -1,7 +1,9 @@
 # H36_Combo
+
 H36 Combo V1 is a newly designed 125℃ high temperature tool board Based on STMG0B1T3.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
+>
 >- Since there is no 125 degree Celsius USB-HUB chip, the 125 degree Celsius operating environment is limited to CANBUS mode；
 >- Klipper currently does not support 125 degree Celsius accelerometers, so the 125 degree Celsius operating environment does not include accelerometers. The default version of H36 is ADXL345, which has a maximum operating temperature of 85 degrees Celsius. The 105 degree Celsius ADXL345-EP version is optional, but it is more expensive.
 
@@ -41,4 +43,3 @@ V1.3 (Currently Available)
 5.Change the LDO chip to TLV75733
 
 6.New mass-produced cables（Mold Forming）
-

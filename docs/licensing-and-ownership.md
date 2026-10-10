@@ -3,8 +3,8 @@
 ## Original repository
 
 - Upstream project: `Psych0h3ad/3d-print-rig`
-- Upstream URL: https://github.com/Psych0h3ad/3d-print-rig
-- Published site: https://psych0h3ad.github.io/3d-print-rig/
+- Upstream URL: <https://github.com/Psych0h3ad/3d-print-rig>
+- Published site: <https://psych0h3ad.github.io/3d-print-rig/>
 - Fork target: `ronaldarroyowatson/3d-print-rig`
 
 ## License

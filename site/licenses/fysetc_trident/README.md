@@ -6,10 +6,10 @@
 
 This is FYSETC's project database for VORON Trident kit, which is convenient for you to find information. Thanks for VORON Team's great work, they always design fantastic printers.
 
-Official website:：https://vorondesign.com/voron_trident
-Official Github：https://github.com/VoronDesign/Voron-Trident
+Official website:：<https://vorondesign.com/voron_trident>
+Official Github：<https://github.com/VoronDesign/Voron-Trident>
 
-In folder `Voron-Trident` beside this README file, we make some small changes base on the VORON official material. Like change the board to Spider and others. 
+In folder `Voron-Trident` beside this README file, we make some small changes base on the VORON official material. Like change the board to Spider and others.
 
 ## 2. BOM
 
@@ -20,8 +20,6 @@ Please check [here](https://github.com/FYSETC/FYSETC-Voron-Trident/blob/main/BOM
 ### Wire connector
 
 ![](Connector.jpg)
-
-
 
 This is for fans wire connection, with this connector you can wire two or more fans to one side of the connector, and the other side  to Spider board. Then you can control the two or more fans with one control pin in Spider.
 
@@ -35,7 +33,7 @@ plug panel: we choose this [one](https://github.com/VoronDesign/Voron-Trident/bl
 
 Microswitch edge pod : this [one](https://github.com/VoronDesign/VoronUsers/blob/master/printer_mods/randell/Microswitch_Endstop/Microswitch_Edge_Pod.stl).
 
-Z Chain mount: Chain size is 1011 ,it is bridge can be opened, so we use our own printed part [1](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/XY_Joints/%5Ba%5D_xy_joint_cable_bridge_3hole.stl) 、 [2](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/X_Carriage/Direct%20Feed/chain_anchor_3hole.stl) and [3](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/X_Carriage/Direct%20Feed/chain_anchor_3hole.stl). 
+Z Chain mount: Chain size is 1011 ,it is bridge can be opened, so we use our own printed part [1](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/XY_Joints/%5Ba%5D_xy_joint_cable_bridge_3hole.stl) 、 [2](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/X_Carriage/Direct%20Feed/chain_anchor_3hole.stl) and [3](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/Gantry/X_Axis/X_Carriage/Direct%20Feed/chain_anchor_3hole.stl).
 
 Spider board mount: search 'Spider' [here](https://github.com/VoronDesign/Voron-Trident/blob/main/STLs/ElectronicsBay/Controller_Mounts/Spider_bracket_2pc.stl).
 

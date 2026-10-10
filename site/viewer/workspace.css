@@ -90,6 +90,57 @@ body.ui-workspace {
 .inspector-panel { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
 .inspector-panel details { min-width: 0; max-width: 100%; }
 .ui-workspace .inspector-panel:focus-visible { outline-offset: -2px; }
+.part-inspector .part-inspector-help { margin-top: 0; }
+.part-inspector .part-inspector-status { margin: 8px 0; }
+.part-inspector-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 92px) minmax(0, 1fr);
+  gap: 6px 10px;
+  margin: 0 0 10px;
+}
+.part-inspector-grid dt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+.part-inspector-grid dd {
+  margin: 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.part-inspector-print-title {
+  margin: 6px 0 4px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.part-inspector-print-empty {
+  margin: 0 0 8px;
+}
+.part-inspector-print-list {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.part-inspector-print-item {
+  display: grid;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 7px 8px;
+  background: #f6f8fa;
+}
+.part-inspector-print-item strong {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.part-inspector-print-settings,
+.part-inspector-print-notes {
+  font-size: 11px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
 .ui-workspace details.panel-section { margin-top: 18px; padding: 15px 0 0; border-top: 1px solid var(--line); }
 .ui-workspace details.panel-section:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
 .ui-workspace summary { gap: 10px; font-size: 12px; line-height: 1.6; }

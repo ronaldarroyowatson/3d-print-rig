@@ -18,7 +18,7 @@ combinations come from the [support index](COMBINATION_SUPPORT.md). Later
 The pinned Voron-Trident source is `a8628f48546948ce1fc15511b7765b7f31f80722`, native 250 mm assembly. `prepare_trident_size_assets.py` uses a separate preparation workspace and output directory. Fasteners, carriages and mounts translate rigidly. Extrusions and sheets receive central/perimeter section inserts. Rail hole patterns repeat at their native pitch; 350 mm Y rails use a 60 mm insertion followed by 5 mm trimming at each end.
 
 | Size | Base parts | Gantry parts | X rail | Y rails | Fixing holes X / Y |
-|---|---:|---:|---:|---:|---:|
+| --- | ---: | ---: | ---: | ---: | ---: |
 | 250 | 856 | 361 | 300 mm | 300 mm | 12 / 15 each |
 | 300 | 856 | 369 | 350 mm | 350 mm | 14 / 18 each |
 

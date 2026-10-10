@@ -20,6 +20,7 @@ import {setupMachineNavigation} from './machines.js?v=cea8407065ba89be6304';
 import {setupRenderExport} from './render-export.js?v=workspace-belts-2';
 import {setupPublicInfo} from './public-info.js?v=84f5c04634e6ad386915';
 import {setupV24MachineHeads} from './machine-heads.js?v=09adb297aeaa924fcad4';
+import {setupPartInspector} from './part-inspector.js?v=part-inspector-2';
 export async function mount(scope){
 setupMachineNavigation('siboor_v24_350');
 setupPublicInfo();
@@ -30,6 +31,8 @@ renderer.setClearColor('#edf1f4');renderer.outputColorSpace=THREE.SRGBColorSpace
 const scene=scope.scene(new THREE.Scene()),camera=new THREE.PerspectiveCamera(38,1,.005,10);camera.position.set(.98,.83,1.4);
 const orbit=scope.resource(new OrbitControls(camera,renderer.domElement));orbit.target.set(0,.22,0);orbit.enableDamping=false;orbit.update();
 let adapter,profile,pose,probeMounts,machineHeads,program,renderPending=false,frames=0;
+const allMeshes=[];
+const partInspector=setupPartInspector({aside:document.querySelector('aside'),stage,renderer,camera,allMeshes,requestRender:render,syncVisibility:applyPose});
 function render(){if(renderPending)return;renderPending=true;workspaceFrame(()=>{renderPending=false;renderer.render(scene,camera);document.body.dataset.renderedFrames=++frames})}
 setupGrid(scene,render);
 const frameMods=await loadFrameMods('siboor_v24_350');
@@ -51,7 +54,7 @@ function applyPose(){if(!adapter)return;
  document.body.dataset.zGuidePositions=JSON.stringify(p.z_guide_block_keys.map(k=>adapter.nodes.get(k).position.toArray()));
  document.body.dataset.flexibleVisible=String(pose.flexible_visible_count>0);
  $('#motionBeltHelp').textContent=machineHeads?.monolith?'MonolithのXYベルトはヘッド・Y軸・ガントリーの移動に追従します。クランプ内部・歯・張力は未再現です。':'Zベルトはフレーム側で固定。XYベルトはヘッド・Y軸・ガントリーに追従します。移動時はクランプ内部・歯・張力を省いた経路プレビューです。';
- $('#motionStatus').textContent=machineHeads?.monolith?'ベッド固定 · Monolithの8個のZガイド・ガントリー・XYベルトが追従':'ベッド固定 · 4ZガイドとガントリーがZ＋へ追従';$('#beltWidths').textContent=`XYベルト ${machineHeads?.variant?.belt_width_mm||profile.xy_belt_width_mm} mm ／ Zベルト ${profile.z_belt_width_mm} mm`;render();
+ $('#motionStatus').textContent=machineHeads?.monolith?'ベッド固定 · Monolithの8個のZガイド・ガントリー・XYベルトが追従':'ベッド固定 · 4ZガイドとガントリーがZ＋へ追従';$('#beltWidths').textContent=`XYベルト ${machineHeads?.variant?.belt_width_mm||profile.xy_belt_width_mm} mm ／ Zベルト ${profile.z_belt_width_mm} mm`;partInspector.applyHiddenVisibility();render();
 }
 try{
  const getJSON=async name=>{return workspaceTask(async()=>{const r=await fetch(assetRoot+name,{cache:'no-cache'});if(!r.ok)throw Error(name);const text=await r.text();nativeInputHashes[name]=await contentSHA256(text);return JSON.parse(text)});};
@@ -59,7 +62,10 @@ try{
  profile=machine;scene.add(gltf.scene);adapter=createV24Adapter(gltf.scene,manifest,profile);
  const probeResponse=await fetch('../V24_PROBES.json?v=trident-clearance-35',{cache:'no-cache'});if(!probeResponse.ok)throw Error('プローブ構成を取得できません');const probeCatalog=await probeResponse.json();
  const protectedMaterials=[],originals=new Map();
+ const partLookup=new Map(manifest.parts.map(row=>[row.key,row]));
  for(const [key,node] of adapter.nodes){node.traverse(mesh=>{if(!mesh.isMesh)return;mesh.material=Array.isArray(mesh.material)?mesh.material.map(m=>m.clone()):mesh.material.clone();
+  const row=partLookup.get(key),record=adapter.records.get(key);
+  mesh.userData.partKey=key;mesh.userData.originalKey=key;mesh.userData.partLabel=row?.label||key;mesh.userData.partGroup=row?.group||record?.group||'';mesh.userData.partComponent=row?.component||'';mesh.userData.partSourcePath=Array.isArray(row?.source?.assembly_path)?row.source.assembly_path.join('/'):(row?.source_path||'');mesh.userData.moduleId='v24_host';allMeshes.push(mesh);
   for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){originals.set(m,m.color.clone());if(!appearanceRole(adapter.records.get(key)))protectedMaterials.push(m);if(m.transparent)m.depthWrite=false}
  });}
  adapter.setEnclosureVisible($('#enclosure').checked);
@@ -115,7 +121,7 @@ try{
  document.body.dataset.qglStatus=profile.qgl.independent_corner_tilt;
  document.body.dataset.xyBeltWidthMm=profile.xy_belt_width_mm;document.body.dataset.zBeltWidthMm=profile.z_belt_width_mm;
  $('#beltWidths').textContent=`XYベルト ${profile.xy_belt_width_mm} mm ／ Zベルト ${profile.z_belt_width_mm} mm`;
- $('#badge').textContent='V2.4 R2 / 350 · '+manifest.parts.length.toLocaleString()+' PARTS';status.hidden=true;applyPose();resize();
+ $('#badge').textContent='V2.4 R2 / 350 · '+manifest.parts.length.toLocaleString()+' PARTS';status.hidden=true;partInspector.applyHiddenVisibility();applyPose();resize();
 }catch(e){status.textContent='読込エラー: '+e.message;document.body.dataset.error=e.message;console.error(e)}
 
 }

@@ -2,8 +2,8 @@
 
 HYDRA fan duct & tool change system by **boothyboothy / Boothy**.
 
-- Source: https://www.printables.com/model/169197-hydra-fan-duct-tool-change-system-for-ender-3-ende
-- Original author publication: https://www.thingiverse.com/thing:4062242
+- Source: <https://www.printables.com/model/169197-hydra-fan-duct-tool-change-system-for-ender-3-ende>
+- Original author publication: <https://www.thingiverse.com/thing:4062242>
 - Terms: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 - Source snapshot: Printables files updated 2022-04-13; no-insert base STEP dated 2021-08-04; tool-plate STEP v1.
 

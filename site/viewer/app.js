@@ -31,6 +31,7 @@ import {expandedPrinterCatalog} from './machine-head-model.mjs?v=21171c5105cd06e
 import {setupGcodePanel,displayedMachineLimits} from './gcode-panel.js?v=f471190665709ba23159';
 import {programPoint,programPathOffset} from './gcode-timeline.mjs?v=a07bc2dcf7216407fe8c';
 import {createHeadMarkers} from './head-markers.mjs';
+import {setupPartInspector} from './part-inspector.js?v=part-inspector-2';
 import {siboorMachine,loadSiboorAssembly} from './siboor-machine.mjs?v=7b1930d263037c5bd13e';
 export async function mount(scope){
 const {id:machine,size,gantryId,maxX,maxY}=siboorMachine();
@@ -59,6 +60,15 @@ let model,pivot,mode=null,start=0,ready=false,registration,refX=0,refY=0,current
 const levers={},plungers={};
 const groups={},moving={y:[],xy:[],z:[],reference_flexible:[]},panes=[],parts=new Map();
 const allMeshes=[];
+const partInspector=setupPartInspector({
+ aside:document.querySelector('aside'),
+ stage,
+ renderer,
+ camera,
+ allMeshes,
+ requestRender:()=>{renderRequested=true},
+ syncVisibility:()=>{if(ready)setPose(current.x,current.y,current.z)}
+});
 let installed='stock',stockRegistration,stockRefX,stockLeverX,stockPlungerX,xolMeta,xolScene;
 let activeConfig,catalog,r2Registration,appearance,stockRows,accessories,installedHeads,toolBank,program,headMarkers;
 const assetRoots=new Map(),assets=new Map(),xolMechanisms={},stockSwitchMeshes=[];
@@ -69,6 +79,7 @@ function registerModule(root,metadata){
  const lookup=new Map(metadata.parts.map(p=>[p.key,p])),meshes=[];
  root.traverse(o=>{if(!o.isMesh)return;const key=o.userData.part_key||o.name,p=lookup.get(key);
  o.userData.originalKey=key;o.userData.partKey=o.userData.mechanism&&key.startsWith('Xol_X')?'480':key;
+ o.userData.partLabel=p?.label||o.userData.partKey||key;o.userData.partGroup=p?.group||'';o.userData.partComponent=p?.component||'';o.userData.partSourcePath=Array.isArray(p?.source?.assembly_path)?p.source.assembly_path.join('/'):(p?.source_path||'');o.userData.moduleId=metadata.id;
  o.material=o.material.clone();o.material.side=THREE.DoubleSide;o.userData.baseOpacity=o.material.opacity;o.userData.baseTransparent=o.material.transparent;
  allMeshes.push(o);meshes.push(o);parts.set(key,o);
  if(key.startsWith('Xol_X'))xolMechanisms[o.userData.mechanism]=o;
@@ -99,6 +110,7 @@ function showHead(){
  for(const m of activeConfig.modules){const a=assetRoots.get(m.id);if(a?.root.userData.headModule)a.root.visible=shown}
  if(activeConfig.machine_head){for(const o of moving.reference_flexible)if(!o.userData.bedChain)o.visible=false;for(const key of ['PTFE_tube','CAN_cable'])if(parts.has(key))parts.get(key).visible=false}
  showBelts();
+ partInspector.applyHiddenVisibility();
 }
 function showBelts(){
  const state=printerBelts.setVisible(activeConfig,$('#cables').checked);
@@ -192,6 +204,7 @@ function setPose(x,y,z){
  $('#routing').dataset.chain=String(routing.chain);$('#routing').dataset.belts=String(routing.belts);$('#routing').dataset.ptfe=String(routing.ptfe);
  $('#routing').dataset.chainLinks=String(routing.chainLinks||0);$('#routing').dataset.chainCulledLinks=String(routing.chainCulledLinks||0);
  updateHeadDiagnostics(x,y);
+ partInspector.applyHiddenVisibility();
  if(activeConfig)for(const m of activeConfig.modules){const a=assetRoots.get(m.id);if(a?.root.userData.headModule)a.root.visible=$('#head').checked}
 }
 function updateHeadDiagnostics(x,y){
@@ -237,13 +250,14 @@ loadSiboorAssembly(machine).then(async([manifest,routes,g,endstops,colorOptions,
  if(!o.isMesh)return;const key=o.userData.part_key||o.name.slice(1).split('__')[0],r=lookup.get(key);parts.set(key,o);
  for(const a of ['X','Y']){if(o.name===registration.switches[a].lever_mesh_name)levers[a]=o;if(o.name===registration.switches[a].plunger_mesh_name)plungers[a]=o}
  if(o.name==='P480__Switch_Housing'||o.name==='P408__Switch_Housing')o.visible=false;
- o.material=o.material.clone();o.userData.partKey=key;o.userData.originalKey=key;o.userData.stock=true;o.userData.stockGroup=r?.group;o.userData.baseOpacity=o.material.opacity;o.userData.baseTransparent=o.material.transparent;allMeshes.push(o);
+ o.material=o.material.clone();o.userData.partKey=key;o.userData.originalKey=key;o.userData.stock=true;o.userData.stockGroup=r?.group;o.userData.partLabel=r?.label||key;o.userData.partGroup=r?.group||'';o.userData.partComponent=r?.component||'';o.userData.partSourcePath=Array.isArray(r?.source?.assembly_path)?r.source.assembly_path.join('/'):(r?.source_path||'');o.userData.moduleId='siboor_stock';o.userData.baseOpacity=o.material.opacity;o.userData.baseTransparent=o.material.transparent;allMeshes.push(o);
  if(r&&moving[r.motion])moving[r.motion].push(o);
  if(r&&manifest.motion_preview.Z_guide_registration.guide_keys.includes(key))guideMeshes.push(o);
  if(r&&manifest.motion_preview.Z_guide_registration.rail_keys.includes(key))guideRails.push(o);
  if(manifest.appearance.transparent_panels.includes(key))panes.push(o);
  o.material.side=THREE.DoubleSide;if(o.material.transparent){o.material.depthWrite=false;o.renderOrder=2}
  });
+ partInspector.applyHiddenVisibility();
  stockRegistration=registration;stockRefX=refX;stockLeverX=levers.X;stockPlungerX=plungers.X;
  bedChain=createBedChain(model,manifest);for(const e of bedChain.entries)e.mesh.userData.bedChain=true;
  flexible=setupFlexible(scene,allMeshes,manifest,routes);appearance=setupAppearance(allMeshes,await lighting.whenReady,colorOptions);

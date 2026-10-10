@@ -2,7 +2,7 @@
 
 Yavoth v1 and Alternative Voron Mounts: chirpy2605/voron,
 cc2e749d09d7f24418f9f8c73c90bcefb1e29584, GPL-3.0.
-https://github.com/chirpy2605/voron/tree/cc2e749d09d7f24418f9f8c73c90bcefb1e29584
+<https://github.com/chirpy2605/voron/tree/cc2e749d09d7f24418f9f8c73c90bcefb1e29584>
 
 Native rigid placements combine the original standard or 5 mm rear-offset
 cowl, LED holder/insert, two angled 4010 blowers, one front-intake 2510 fan,

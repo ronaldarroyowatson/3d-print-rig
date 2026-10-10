@@ -1,10 +1,12 @@
 # ZeroClick - fast & simple bed probing for tiny printers
+
 Made with :heart: by Zruncho
 
 ## Updates
+
 * 2022-02-08 Initial alpha-1 release!  Enjoy.  It took over 10 prototypes to get here.
 
-## See ZeroClick in action: https://youtu.be/XPtowYdHhJ8
+## See ZeroClick in action: <https://youtu.be/XPtowYdHhJ8>
 
 ## Why ZeroClick?
 
@@ -17,6 +19,7 @@ Made with :heart: by Zruncho
 [Klicky](https://github.com/jlas1/Klicky-Probe) inspired it, but ZeroClick is a detachable click probe that is sized right for Zero-size (1515-extrusion) printers.
 
 Key features:
+
 * **Fast to print**: 3 parts, under an hour.  No new toolhead to print!
 * **Fast to add**: choose the most convenient dock location.  No frame dissassembly needed!
 * **Minimizes lost bed area**: on the order of 4mm x 4mm!
@@ -30,6 +33,7 @@ Key features:
   * **No servos, special magnets, or PCBs needed.**
 
 Known to be compatible with these designs:
+
 * [Voron Zero](https://vorondesign.com/voron0.1)
 * [Tri-Zero](https://github.com/zruncho3d/tri-zero)
 * [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon)
@@ -41,6 +45,7 @@ Known to be compatible with these designs:
 ### Prep
 
 #### Choose wisely
+
 | Center | Rear | Side |
 | - | - | - |
 | ![Center](Renders/dock_center.png) | ![Rear](Renders/dock_rear.png) | ![Side](Renders/dock_side.png) |
@@ -52,7 +57,7 @@ Known to be compatible with these designs:
     * The benefit over Center?  This can be slid left and right, which is useful for wider V0 variants like [X0](https://github.com/zruncho3d/double-dragon).
     * Requires the least material & print time.
   * **Side**: mounts to the bottom face of the left-side Y extrusions on a V0 or similar printer, so you'll need two pre-loaded nuts there.  
-     * Not an option for printers with stuff on the bottom of the Y extrusions, like [X0](https://github.com/zruncho3d/double-dragon).
+    * Not an option for printers with stuff on the bottom of the Y extrusions, like [X0](https://github.com/zruncho3d/double-dragon).
 * Print the dock, probe, and mount in ABS. Standard Voron settings (4 perims, 40% infill) will work, but all docks will print fine with much less material (3 perims, 13%).  Print two probes, 'cuz why not?  It's only minutes, and this gives you a backup in case you lose one or in case it splits.
 * Confirm the size of magnet holes with calipers.  The CAD is sized with 0.1mm extra, which should yield something very close to 6.0mm (ideally +/- 0.05mm) when printed.  The hole should be small enough to hold the magnet without glue, but not so tight that it splits the plastic.  
 * Remove the middle leg of the 3 on the microswitch, using flush cutters.
@@ -60,6 +65,7 @@ Known to be compatible with these designs:
 * Confirm space in the probe block for the microswetch legs to go through.  If not enough, drill this hole out slightly.
 
 ### Assemble Probe Block
+
 You'll need a small desk vise for the next steps.
 
 | ![Probe with solder wick](Images/mount_underside_3.png) | ![Probe in vise](Images/probe_block_in_vise.png)
@@ -74,7 +80,6 @@ You'll need a small desk vise for the next steps.
 * Test the connection between the magnets and though the switch, with a multimeter.  You want, ideally, a ~1 ohm or less connection, but a few ohms will be fine.  If the connection is bad, clamp the magnets slightly more.
 * Ideally, lap the magnet connection for flatness with some fine-grit sandpaper.
 
-
 ### Assemble Mount
 
 | ![Wires](Images/wires.png) | ![Mount before magnets](Images/mount_before_magnets.png) | ![Mount Underside](Images/mount_underside.png) |
@@ -87,13 +92,13 @@ You'll need a small desk vise for the next steps.
 * Flip the polarity marker around (typically a nut), so that when you insert the magnet, the orientation is flipped.
 * Add the magnets in a simlar method to the probe block, ensuring that both magnets are coplanar and fully inserted.
 
-
 ### Test Probe Block and Mount electrical connection together
 
 * Connect the probe block and mount together, and ensure that the magnets can't rock back and forth.
 * Test the electical connection quality through the full stack, with a multimeter.  If the resistance is too high, clamp harder and try again.
 
 ### Modify Toolhead and add Mount
+
 Modifying the toolhead sounds scary, but it's easier than you may think.
 
 Plus - even if you get it wrong, the chop goes in the back and gets covered up, so nobody will see it anyway.
@@ -113,6 +118,7 @@ No worries, YOLO, Just Do It.
 * Reattach the toolhead.
 
 ### Attach Dock to Frame
+
 * Prep the dock by adding an M3x6 BHCS to the hole near where the end magnet will go.  Tighten it in, forming threads, until the head of the screw would just touch the magnet.  The screw should be regular steel, not stainless, for magnetic reasons.
 * Attachment should be straightforward enough for the Center Dock, and maybe require a bit of diassembly for the others, unless you thought ahead and added nuts preemptively.  
   * Protip: use NoDropNuts to hold the nuts in place.  All dock variants use at least a 15mm spacing between nuts to enable NoDropNut usage, as well as 2x M3x6 BHCS.
@@ -120,8 +126,10 @@ No worries, YOLO, Just Do It.
 * Rear Dock only: get it to the right width, by aligning the probe to the leftmost toolhead position.
 
 ### Configure Klipper
+
 * Configure the probe pin in your config.  Make sure the endstop detects the click with the probe added.
 * Configure the bed-probing points, if needed.  Example here for [T0](https://github.com/zruncho3d/tri-zero):
+
  ```
    [z_tilt]
    ....
@@ -138,7 +146,9 @@ No worries, YOLO, Just Do It.
        115, 5
        70, 95
 ```
+
 * Add macros to attach and detach.  [Klicky macros](https://github.com/jlas1/Klicky-Probe) are recommended, but if not using those, or just looking to test attachment and detachment quickly, here are sample macros to use the Center Dock with a V0:
+
 ```
     [gcode_macro ATTACH_PROBE]
     gcode:
@@ -177,7 +187,6 @@ Finally, run HOME, then ATTACH_PROBE, then run Z_TILT or QGL or BED_MESH or what
 
 Enjoy!
 
-
 ## Known Caveats
 
 If the toolhead grabs the probe and moves directly right, the back edge of the probe will hit the rear extrusions.
@@ -213,8 +222,3 @@ These parts are a spinoff from the [Tri-Zero](https://github.com/zruncho3d/tri-z
 The probe block design derives from the [SideSwipe probe block](https://github.com/oldfar-t/Side-Swipe-Magnetic-Probe/blob/main/Side_Swipe_STLs/Probe_Block_v2.5.STL), with changes for easier printability.
 
 Thanks to Red5 on the [DoomCube Discord](https://discord.gg/doomcube) for being the first beta tester!
-
-
-
-
-

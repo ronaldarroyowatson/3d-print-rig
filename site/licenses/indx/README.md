@@ -17,8 +17,8 @@
 
 **Part 2: Getting Started**
 
-6. [Requirements & Preparation](#requirements--preparation)
-7. [Installation](#installation)
+1. [Requirements & Preparation](#requirements--preparation)
+2. [Installation](#installation)
    - [Hardware Installation](#hardware-installation)
    - [Firmware Configuration](#firmware-configuration)
      - [Klipper / Kalico](#klipper)
@@ -33,7 +33,7 @@
 
 **Part 3: Configuration**
 
-8. [Configuration](#configuration)
+1. [Configuration](#configuration)
    - [Dock Position Calibration](#dock-position-calibration)
      - [Finding dock_y](#finding-dock_y-y-fully-seated-position)
      - [Finding dock_x](#finding-dock_x-x-tool-centre)
@@ -47,25 +47,25 @@
 
 **Part 4: Day-to-day Use**
 
-9. [Using INDX](#using-indx)
+1. [Using INDX](#using-indx)
    - [Loading Filament into Tools](#loading-filament-into-tools)
    - [Performing Tool Changes](#performing-tool-changes)
    - [Slicer Setup](#slicer-setup)
 
 **Part 5: Designing for INDX**
 
-10. [Designing for INDX](#designing-for-indx)
+ 1. [Designing for INDX](#designing-for-indx)
     - [Dock Design](#dock-design)
     - [Part Cooling (custom)](#part-cooling-1)
     - [CAD Files & Templates](#cad-files--templates)
 
 **Part 6: Maintenance, Support & Community**
 
-11. [Maintenance](#maintenance)
+ 1. [Maintenance](#maintenance)
     - [Nozzle clog: cold pull procedure](#nozzle-clog-cold-pull-procedure)
-12. [Troubleshooting](#troubleshooting)
-13. [FAQ](#faq)
-14. [Community & Contributing](#community--contributing)
+ 2. [Troubleshooting](#troubleshooting)
+ 3. [FAQ](#faq)
+ 4. [Community & Contributing](#community--contributing)
 
 ---
 
@@ -84,7 +84,7 @@ Unlike traditional mechanical tool changers, INDX uses wireless induction heatin
 INDX is sold by Bondtech as a **Development Kit** for open CoreXY printers. Prusa Research has built an official first-party integration for the **CORE One** and **CORE One L**, sold directly through Prusa.
 
 | | INDX Development Kit | Prusa CORE One / CORE One L |
-|---|---|---|
+| --- | --- | --- |
 | **Sold by** | Bondtech ([bondtech.se](https://www.bondtech.se)) | Prusa Research ([prusa3d.com](https://www.prusa3d.com)) |
 | **For** | Most CoreXY printers with open firmware | Prusa CORE One / CORE One L |
 | **Setup** | Self-managed (community-supported) | Plug-and-play |
@@ -548,12 +548,10 @@ The Smart Head replaces your printer's existing toolhead entirely. It mounts to 
 
 **X-carriage adapters** are available in two ways:
 
-
 | Source             | Material                | Notes                                                                                                                      |
 | ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Bondtech (shop)    | SLS-printed Nylon 12 GF | Common MGN12 carriage options available to purchase                                                                    |
 | GitHub / community | User-printed            | Printable MGN12H adapter (6mm belts) in the repo; use the reference STEP to adapt one for other carriages |
-
 
 If your carriage configuration isn't covered by Bondtech's sold options, the repository has a printable MGN12H adapter for 6mm belts in [CAD Files & Templates](#cad-files--templates). For anything else, the reference STEP in the same section carries the mounting geometry to design against, and the [officially recognized integrations](#officially-recognized-integrations) above cover some specific printers. Community-made X-carriage designs that meet quality standards are welcome in the repo via pull request.
 
@@ -621,12 +619,10 @@ If you are printing your own, the repository has two dock bodies. The **standard
 
 **Dock options:**
 
-
 | Source          | Type                                 | Mounting                                     |
 | --------------- | ------------------------------------ | -------------------------------------------- |
 | Bondtech (shop) | SLS-printed Nylon 12 GF              | Designed for MakerBeam XL 15×15              |
 | GitHub          | Reference design + community designs | Print yourself, or adapt for your frame      |
-
 
 Community-contributed dock designs live in [`community/`](community/) in the repository. There is a [2020 extrusion dock](community/1_printer_agnostic/2020-dock/) there already if your frame is 2020 rather than 15×15, along with a [magnet jig](community/1_printer_agnostic/magnet-jig/) that makes dock assembly considerably less painful. If you design a dock for an unlisted printer or frame, consider submitting it. See [Dock Design](#dock-design) for geometry constraints and design requirements before you start.
 
@@ -641,7 +637,7 @@ The dock must be positioned so that a parked tool sits **2mm higher** than it do
 **Alignment method**
 
 Use the printable alignment jig ([`INDX_Dock_calibration_tool.stl`](CAD/STL/INDX_Dock_calibration_tool.stl)) placed over the nozzle tool in the toolhead to set the correct height. The printer does not need to be powered on for this step; you are setting the physical dock height manually.
-_Pro tip: you can also use the alignment jig to get exact X alignment of the docks, by moving your printhead to the desired X value before doing the steps below._
+*Pro tip: you can also use the alignment jig to get exact X alignment of the docks, by moving your printhead to the desired X value before doing the steps below.*
 
 1. Place the printed alignment jig over the tool magnets while the tool is in the smart head.
 
@@ -1289,13 +1285,17 @@ Measures the absolute X position without needing a prior home, using the plugin'
 1. `M84` (disable motors)
 2. Manually slide the toolhead to the T0 dock
 3. Run:
+
    ```gcode
    CALIBRATE_DOCK_X TOOL=0
    ```
+
    The macro homes Y then X and reports the measured `dock_x` for that tool. Paste it into `indx.cfg`:
+
    ```ini
    variable_t0_x: 0.000   # from CALIBRATE_DOCK_X output
    ```
+
 4. For each additional tool: `M84`, slide to the dock, run `CALIBRATE_DOCK_X TOOL=N`. No `FIRMWARE_RESTART` needed between tools.
 5. Once all tools are recorded, `RESTART` to apply, then `G28` to restore normal machine coordinates.
 
@@ -1323,15 +1323,19 @@ Once you have calibrated the dock position for at least one tool, do a controlle
 
 1. Home the printer (`G28`)
 2. Pick up the tool:
+
    ```gcode
    T0
    ```
+
 3. Confirm the Smart Head locks onto the tool and the nozzle begins heating
 4. Once at temperature, confirm the DX extruder can feed filament (optional: extrude a short amount manually)
 5. Park the tool back in the dock:
+
    ```gcode
    PARK_TOOL
    ```
+
 6. Confirm the tool deposits cleanly and the Smart Head returns to a safe position
 
 If the pick-up or deposit fails, do not retry at speed. Go back to the dock position calibration steps above and recheck the coordinates for that tool.
@@ -1375,19 +1379,25 @@ The INDX macro package includes a built-in camera calibration workflow (`CAL_ONE
 **Workflow:**
 
 1. Pick up T0 and jog the nozzle tip to the centre of your camera crosshair. Run:
+
    ```gcode
    CAL_ONE_SET_CAMERA_REF
    ```
+
    This saves the current position as the reference point.
 
 2. For each additional tool, run:
+
    ```gcode
    CAL_TWO_PREP_TOOL_CAL TOOL=1
    ```
+
    The macro picks up the tool and moves it to the camera position. Re-centre the nozzle in the crosshair using the jog controls, then run:
+
    ```gcode
    CAL_THREE_SAVE_XY_OFFSET
    ```
+
    The offset is calculated and saved automatically. Repeat for every additional tool.
 
 Offsets are saved as `t{n}_offset_x` / `t{n}_offset_y` and applied immediately on the next tool pick-up.
@@ -1421,11 +1431,13 @@ then measured. The heater is switched off before that tool is parked. The bed he
 is not controlled by `CAL_Z`.
 
 Prerequisites:
+
 - Printer homed (homes automatically if not)
 - **No filament available to the extruder gears in any tool** — if filament is loaded, latch engage moves during pickup can spike load-cell readings and cause calibration to fail.
 - When using `NOZZLE_TEMP`, make sure the nozzle tips are clean. Any softened filament on a nozzle can affect the load-cell measurement.
 
 Per tool, the macro:
+
 1. Picks up the tool
 2. Pre-probes 3× at a per-tool debris-clearing spot to clean the nozzle tip
 3. Runs a convergence loop at a clean spot: probes repeatedly until the 4-sample rolling variance is below 0.005 mm, fuzzing to a new position if it stalls
@@ -1459,7 +1471,7 @@ The main difference from a traditional hotend is heat-up speed. A conventional h
 Tool change motion speed and acceleration are controlled by three preset modes: **Stealth**, **Normal**, and **Sport**. Each mode sets a multiplier that is applied against the `max_velocity` and `max_accel` values defined in your `printer.cfg`. The macros read those limits at runtime, so the modes automatically scale to whatever printer they're running on, with no hardcoded numbers.
 
 | Mode | G-code | Speed multiplier | Accel multiplier | XY stepper mode |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Stealth** | `MODE_STEALTH` | 20% | 20% | StealthChop (quiet) |
 | **Normal** | `MODE_NORMAL` | 70% | 70% | SpreadCycle |
 | **Sport** | `MODE_SPORT` | 100% | 100% | SpreadCycle |
@@ -1572,6 +1584,7 @@ Common slicers used with INDX include PrusaSlicer, OrcaSlicer, SuperSlicer, and 
   **OrcaSlicer**
 
   Add under Printer Settings → Machine G-code → Change filament G-code:
+
   ```gcode
   CHANGE_TOOL TOOL={next_extruder} TEMP={new_filament_temp}
   M400
@@ -1590,6 +1603,7 @@ Common slicers used with INDX include PrusaSlicer, OrcaSlicer, SuperSlicer, and 
   1. Under Printer Settings → General → Capabilities, set **Number of extruders** to match your tool count
   2. Make sure **Single Extruder Multimaterial Printer** is **unchecked**; this mode is for filament switchers (MMU/AMS) and must be off for a tool changer
   3. Under Printer Settings → Custom G-code → Tool change G-code, add:
+
   ```gcode
   T{next_extruder}
   {if (wipe_tower)}
@@ -1621,6 +1635,7 @@ Common slicers used with INDX include PrusaSlicer, OrcaSlicer, SuperSlicer, and 
   1. In **Settings → Printer → Manage Printers → Machine Settings**, set **Number of Extruders** to match your tool count. Cura then outputs `T0`, `T1`, … automatically at each tool change.
   2. Enable **Prime Tower** (search "prime tower" in the print settings). This is Cura's equivalent of the wipe tower; Cura moves to it and purges the freshly heated tool automatically, so you don't script the move yourself.
   3. In **Machine Settings**, open each extruder's tab and add to its **Extruder Start G-code** (this runs every time that tool becomes active):
+
   ```gcode
   M104 S{material_print_temperature}
   TEMPERATURE_WAIT SENSOR=extruder MINIMUM={material_print_temperature}
@@ -1792,11 +1807,13 @@ When the nozzle is not correctly positioned inside the coil, the IR sensor reads
 > ⚠️ Do not allow paper, wiring, or other flammable material near the induction coil area. Keep firmware up to date; incorrect firmware versions may not correctly limit heating.
 
 **If the nozzle is not reaching temperature:**
+
 - Verify the passive tool is fully picked up and seated correctly in the Smart Head; it should click into the Maxwell coupling and show no visible misalignment
 - Check that the tool has not been bent or damaged in a way that affects its position inside the coil
 - Confirm the firmware is up to date
 
 **If the nozzle is overheating:**
+
 - Immediately cancel any print or heating command
 - Inspect the tool for misalignment or damage
 - Do not continue using the tool until the cause is identified

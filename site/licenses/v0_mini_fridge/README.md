@@ -1,21 +1,20 @@
-# Presenting the "Mini Fridge" Door Mod for your v0.2 and Micron.
+# Presenting the "Mini Fridge" Door Mod for your v0.2 and Micron
 
 This project is a modified version of WhoppingPochard's Clicky-Clack Door mod.
 
 I needed a door my son could not break on the v0.2, the stock VHB style doors work well however with an excited child they tend to break, having WhoppingPochard's Clicky-Clack doors on my 2.4 and Trident I decided to create this version (mini version) for my son.
 
-
 ![widescreen hero](https://github.com/TheVoronModder/MiniFridge/assets/142328467/22bdb0c7-ece7-482e-9293-6f48190b7502)
 
+### UPDATE!!!!! 5/2/24 - 3mm foam panels parts are not 100% complete yet, the door hinge is being worked on and tested currently, stay tuned for updates or if you like you are free to download the part files and modify them as your own
 
-### UPDATE!!!!! 5/2/24 - 3mm foam panels parts are not 100% complete yet, the door hinge is being worked on and tested currently, stay tuned for updates or if you like you are free to download the part files and modify them as your own.
-
-The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, the cad files for the fridge upper / lower latch have been modified to work with both BHCS and SHCS.
+The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, the cad files for the fridge upper / lower latch have been modified to work with both BHCS and SHCS
 -------------------------------------------------------------------------------
 
  There are 2 versions of door hinges, Left Handed and Right Handed - Yes, I made an option for Left Handed people. (Details below)
 
 -------------------------------------------------------------------------------
+
 ## Approved Vendors
 
 <table>
@@ -43,9 +42,8 @@ The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, 
 
 ![frame dims bro](https://github.com/user-attachments/assets/8ff9a495-f4f8-4192-8f09-3270eb55f32c)
 
-
-
 ## Hardware List - Stock Side Panel (Handle and Hinges)
+
 <table>
   <tr>
     <th>Hardware</th>
@@ -84,10 +82,10 @@ The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, 
 </table>
 </details>
 
-
 -----------------------------------------------------------
 
 ## Hardware List - 3mm Foam Side Panel (Handle and Hinges)
+
 <details closed>
 <summary><strong>Hardware</strong></summary>
 <table>
@@ -128,9 +126,10 @@ The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, 
 </table>
 </details>
 
-
  -------------------------------------------------------------
+
 # List of Extrusions and Panel Sizes with links to the appropriate .dxf
+
 ### These are designed around Misumi Extrusions others may work but are currently UNTESTED
 
 2 file types for each printer, a bit excessive I know, however, in testing not all panels fit precisely, it depends on who you have cut them, West3d's kits are verified to fit, and Mandala Rose Works and Dllpdf can make your panels to order.
@@ -220,8 +219,8 @@ The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, 
 </details>
 
 -----------------------------------------------------
-## Skirt Options
 
+## Skirt Options
 
 <table>
   <tr>
@@ -247,17 +246,13 @@ The first LDO kits shipped were sent with 2x extra m3x8mm BHCS instead of SHCS, 
 
 ## STL's
 
-Door Handle - https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/door_handle
+Door Handle - <https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/door_handle>
 
-Left Hinge (Right Handed) - https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/left_hinge
+Left Hinge (Right Handed) - <https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/left_hinge>
 
-Right Hinge (Left Handed) - https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/right_hinge
+Right Hinge (Left Handed) - <https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/right_hinge>
 
-3mm Foam Side Panels - https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/3mm_foam_options
-
-
-
-
+3mm Foam Side Panels - <https://github.com/TheVoronModder/MiniFridge/tree/main/mini_fringe_parts/3mm_foam_options>
 
 ## Attribution and Thank-you's
 
@@ -272,5 +267,4 @@ Right Hinge (Left Handed) - https://github.com/TheVoronModder/MiniFridge/tree/ma
 
 If you are not a member yet please join us today:
 
-https://discord.gg/fizzystech
-
+<https://discord.gg/fizzystech>

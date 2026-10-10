@@ -11,18 +11,16 @@ If you use this toolhead and modify or remix, please upload here or let me know 
 📸 Instagram: [@practically_printed](https://instagram.com/practically_printed)  
 💬 Sphinx Development Channel: [sphinx-dev](https://discord.gg/Rgn6Q9szn)
 
-
 ---
 
 ---
 
 ## 🧩 Notes
 
-The current and most up to date version of Sphinx is called Sphinx tLW. This version utilizes a micro bowden approach in order to optimize for COM while not compromising on toolhead rigidity and so far has proved to work very well. 
+The current and most up to date version of Sphinx is called Sphinx tLW. This version utilizes a micro bowden approach in order to optimize for COM while not compromising on toolhead rigidity and so far has proved to work very well.
 
 - **Print Settings:** 8 walls, 8 top/bottom layers, 40% infill
 - Print at least 4 of the Apex clips in either the Voron or Monolith folder
-
 
 ---
 
@@ -48,12 +46,12 @@ Big thanks to discord users xyglotop and generikv for these images
 
  <img src="Images/sphinx_TLW_COM.png" width="300">
 
- 
 ---
 
 ## 🧰 Currently Supported Hardware
 
 **Hotends:**  
+
 - Tricorn
 - Goliath
 - CHC XL
@@ -61,9 +59,11 @@ Big thanks to discord users xyglotop and generikv for these images
 - Dragon UHF
 
 **Extruders:**  
+
 - Sherpa Mini  
 
 **Probes:**  
+
 - Beacon
 - Cartographer
 
@@ -71,18 +71,19 @@ Big thanks to discord users xyglotop and generikv for these images
 
 ## 🔧 Hardware in Progress
 
-**Hotends:**    
-- None unless requested    
+**Hotends:**
+
+- None unless requested
 
 **Extruders:**  
-- Orbiter 2.0   
-  
 
+- Orbiter 2.0
+  
 ---
 
 ## 🌬️ Cooling Capability
 
-The toolhead is built specifically around the duct geometry to maximize usable airflow for part cooling, with support for either WS9290 or WS7040 blowers. The 9290 blower is the optimal option is very aggressive and great for speed printing, but the 7040 duct will not disappoint. The goal of the ducts was to be able to print a perfect 5min benchy. 
+The toolhead is built specifically around the duct geometry to maximize usable airflow for part cooling, with support for either WS9290 or WS7040 blowers. The 9290 blower is the optimal option is very aggressive and great for speed printing, but the 7040 duct will not disappoint. The goal of the ducts was to be able to print a perfect 5min benchy.
 
 ## 5min 20sec ABS Benchy
 
@@ -92,7 +93,7 @@ The toolhead is built specifically around the duct geometry to maximize usable a
 
 ## Other Information
 
-Sphinx is meant to be used with an mgn12H rail carriage. A higher preload x rail is encouraged for best Input Shaper results 
+Sphinx is meant to be used with an mgn12H rail carriage. A higher preload x rail is encouraged for best Input Shaper results
 
 COM for this toolhead was optimized using CNC Sherpa Mini and Tricorn, but will also be should be pretty similar with all other hotends
 

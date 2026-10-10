@@ -1,7 +1,7 @@
 # Fixed-Gantry-SC
 
 Original modifications and assemblies: N3MI-DG.
-https://github.com/N3MI-DG/Fixed-Gantry-SC
+<https://github.com/N3MI-DG/Fixed-Gantry-SC>
 Revision ba257556bbe1e6233ee78b3e39e2169c420c9ab9; GPL-3.0.
 
 Upstream credits retained: DraftShift Design (StealthChanger), hartk1213

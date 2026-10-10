@@ -12,7 +12,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## SIBOOR Trident JUNE / ClickyClacky・FumePack
 
 作者：Lzhikai
-配布元・参考元：https://github.com/Lzhikai/SIBOOR-Voron-Trident-June/tree/2dccffff009af5eb511ff6a6bbbdd8a3e8ec5ef3
+配布元・参考元：<https://github.com/Lzhikai/SIBOOR-Voron-Trident-June/tree/2dccffff009af5eb511ff6a6bbbdd8a3e8ec5ef3>
 版：2dccffff009af5eb511ff6a6bbbdd8a3e8ec5ef3 / 300mm STEP SHA256: 0c8eeb356bd3809dee9c0909d182262b714048eaa98bad1da90d33c0d5b1f88e
 適用範囲：取得した300mm STEPから350へ再構成した本体。ドア・フィルターを含む。
 ライセンス：再配布条件の明記を確認できず / 公開前に確認が必要
@@ -22,7 +22,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## SIBOOR V2.4 旧キット資料
 
 作者：Lzhikai
-配布元・参考元：https://github.com/Lzhikai/SIBOOR-Voron-2.4/tree/9aed87dc4e01b53cebb0604efc2ca1495be7bcf4
+配布元・参考元：<https://github.com/Lzhikai/SIBOOR-Voron-2.4/tree/9aed87dc4e01b53cebb0604efc2ca1495be7bcf4>
 版：9aed87dc4e01b53cebb0604efc2ca1495be7bcf4
 適用範囲：資料参照のみ。現在のV2.4表示モデルのCNC形状には使用していません。
 ライセンス：再配布条件の明記を確認できず / 公開前に確認が必要
@@ -31,7 +31,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## SIBOOR V2.4 AUG CNC キット資料
 
 作者：Lzhikai
-配布元・参考元：https://github.com/Lzhikai/SIBOOR-Voron-2.4-AUG/tree/e3569bf1dca2e5056a3d4612620255e81cec91f9
+配布元・参考元：<https://github.com/Lzhikai/SIBOOR-Voron-2.4-AUG/tree/e3569bf1dca2e5056a3d4612620255e81cec91f9>
 版：e3569bf1dca2e5056a3d4612620255e81cec91f9
 適用範囲：キットの仕様・マニュアル参照のみ。CNC形状は未導入。
 ライセンス：再配布条件の明記を確認できず / 公開前に確認が必要
@@ -40,7 +40,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## VORON Trident R2
 
 作者：VoronDesign
-配布元・参考元：https://github.com/VoronDesign/Voron-Trident/tree/a8628f48546948ce1fc15511b7765b7f31f80722
+配布元・参考元：<https://github.com/VoronDesign/Voron-Trident/tree/a8628f48546948ce1fc15511b7765b7f31f80722>
 版：a8628f48546948ce1fc15511b7765b7f31f80722
 適用範囲：独立した標準Trident 350の筐体・フレーム・3Z・ベッド・パネル、および6 mm XYガントリー。SIBOORのR2交換ガントリーにも使用。
 ライセンス：GPL-3.0
@@ -50,7 +50,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## VORON V2.4 R2
 
 作者：VoronDesign
-配布元・参考元：https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73
+配布元・参考元：<https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73>
 版：a192410e27ea345644ae5c4b29b4c9c40cbe1a73
 適用範囲：250の公式アセンブリから構築したV2.4 350基準モデル。
 ライセンス：GPL-3.0
@@ -60,7 +60,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## Stealthburner / Clockwork 2 / Revo CAD
 
 作者：VoronDesign
-配布元・参考元：https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b
+配布元・参考元：<https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b>
 版：8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b
 適用範囲：SBの追加ホットエンド取付、CW2修復用形状。
 ライセンス：GPL-3.0
@@ -70,7 +70,7 @@ Xol / Sherpa Mini / Rapido 2 UHFとJabberWocky / Conchの待機配置を登録�
 ## Xol Toolhead / Sherpa Mini CAD
 
 作者：Armchair-Heavy-Industries
-配布元・参考元：https://github.com/Armchair-Heavy-Industries/Xol-Toolhead/tree/c00b13ef851d38fef6e295e18296650e1ca50d7e
+配布元・参考元：<https://github.com/Armchair-Heavy-Industries/Xol-Toolhead/tree/c00b13ef851d38fef6e295e18296650e1ca50d7e>
 版：c00b13ef851d38fef6e295e18296650e1ca50d7e
 適用範囲：Xol本体、6/9 mmクランプ、Revo/Rapido取付、押出機マウント。
 ライセンス：CC BY-NC-SA 4.0（部品別例外あり）
@@ -81,7 +81,7 @@ G2SA / WWG2はGPL、Annex DFAは別ライセンス。現在の構成には含め
 ## Phaetus Rapido 2 HF / UHF
 
 作者：Phaetus
-配布元・参考元：https://github.com/Phaetus/Rapido-2/tree/d1f1a5d58db21d7ed0e690d34ddca5f89e339d8a
+配布元・参考元：<https://github.com/Phaetus/Rapido-2/tree/d1f1a5d58db21d7ed0e690d34ddca5f89e339d8a>
 版：d1f1a5d58db21d7ed0e690d34ddca5f89e339d8a / HF原本 Product Models/Rapdio 2-hf.prt.stp / SHA256 ee13d671002ff07406c56738aa77278f8f56b55d737faf7e14ff7f6b16cb21c7。UHF取得版はSIBOOR・Xolの記録を参照。
 適用範囲：HFはメーカー原本。UHFはSIBOOR／Xolアセンブリに含まれる形状を使用。
 ライセンス：再配布条件の明記を確認できず / 公開前に確認が必要
@@ -90,7 +90,7 @@ G2SA / WWG2はGPL、Annex DFAは別ライセンス。現在の構成には含め
 ## Disco on a Stick XXL
 
 作者：bartlammers / BLAMM!（VoronDesign/Voron-Hardware）
-配布元・参考元：https://github.com/VoronDesign/Voron-Hardware/tree/5e5fca5761380576a8bb77f7301cdee90afa0e6e
+配布元・参考元：<https://github.com/VoronDesign/Voron-Hardware/tree/5e5fca5761380576a8bb77f7301cdee90afa0e6e>
 版：5e5fca5761380576a8bb77f7301cdee90afa0e6e
 適用範囲：基板・2020ブラケット。左右に2本、50灯。
 ライセンス：GPL-3.0
@@ -100,7 +100,7 @@ G2SA / WWG2はGPL、Annex DFAは別ライセンス。現在の構成には含め
 ## Trident CNCガントリーの原設計
 
 作者：ShenLin / GKD Team（AWD原案：aTinyShellScript・DoubleT）
-配布元・参考元：https://github.com/GKD-Team/Voron-Trident-CNC-Gantry/tree/a073f12e6d1b1115846662cb0c45ac46cb8aae3a
+配布元・参考元：<https://github.com/GKD-Team/Voron-Trident-CNC-Gantry/tree/a073f12e6d1b1115846662cb0c45ac46cb8aae3a>
 版：a073f12e6d1b1115846662cb0c45ac46cb8aae3a
 適用範囲：原設計・採用予定品の資料照合。現在のビューアーへCADを追加していません。
 ライセンス：GPL-3.0
@@ -111,7 +111,7 @@ SIBOOR公式資料がリンクするShenLinの設計。現行SIBOOR各部品と�
 ## Chaoticlab CNC Kit V2.0
 
 作者：Chaoticlab
-配布元・参考元：https://github.com/Chaoticlab/Voron-2.4-CNC-Parts-Kit-V2.0/tree/e1d1451b613b7dfc9033e9597e41d097c80ae578
+配布元・参考元：<https://github.com/Chaoticlab/Voron-2.4-CNC-Parts-Kit-V2.0/tree/e1d1451b613b7dfc9033e9597e41d097c80ae578>
 版：e1d1451b613b7dfc9033e9597e41d097c80ae578
 適用範囲：原設計・採用予定品の資料照合。現在のビューアーへCADを追加していません。
 ライセンス：CC BY-NC-ND 4.0
@@ -122,7 +122,7 @@ SIBOOR公式資料がリンクするShenLinの設計。現行SIBOOR各部品と�
 ## Orbiter V2.0
 
 作者：dr. Lorincz Robert / LDO Motors
-配布元・参考元：https://www.orbiterprojects.com/orbiter-v2-0/
+配布元・参考元：<https://www.orbiterprojects.com/orbiter-v2-0/>
 版：V2.0 mockup ZIP / SHA256 a8b041652022fa350f7ddc4fb0f7962f7df02eabeb3c00df435a30b07de59818
 適用範囲：Xol Orbiter2の押出機・内部機構。
 ライセンス：CC Attribution–NonCommercial–ShareAlike（取得ファイルに版番号の明記なし）
@@ -132,7 +132,7 @@ SIBOOR公式資料がリンクするShenLinの設計。現行SIBOOR各部品と�
 ## Three.js
 
 作者：Three.js contributors
-配布元・参考元：https://github.com/mrdoob/three.js/tree/r180
+配布元・参考元：<https://github.com/mrdoob/three.js/tree/r180>
 版：0.180.0
 適用範囲：3D描画・GLTF読み込み・カメラ操作。
 ライセンス：MIT
@@ -142,7 +142,7 @@ SIBOOR公式資料がリンクするShenLinの設計。現行SIBOOR各部品と�
 ## Clicky-Clack Fridge Door
 
 作者：tanaes / whoppingpochard
-配布元・参考元：https://github.com/tanaes/whopping_Voron_mods/tree/62268ed817878e54d6a1186882060aa8368d4f0f/clickyclacky_door
+配布元・参考元：<https://github.com/tanaes/whopping_Voron_mods/tree/62268ed817878e54d6a1186882060aa8368d4f0f/clickyclacky_door>
 版：62268ed817878e54d6a1186882060aa8368d4f0f / 原設計を照合した参考commit。使用形状はSIBOOR配布版／300mm STEP SHA256で識別。
 適用範囲：SIBOOR本体に含まれるドア・フィルターの原作者クレジット。参考commitからCADを追加取得していません。
 ライセンス：原設計 GPL-3.0。SIBOOR版の変更範囲・対応版は未確定。
@@ -153,7 +153,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## FumePack
 
 作者：Exerqtor（原案・前身：smooshworx、DoubleT、oab1、Nevermore）
-配布元・参考元：https://github.com/Exerqtor/Voron/tree/6831a71b915dd4eebb9db524d54a9e1a82e21289/Mods/fume_pack
+配布元・参考元：<https://github.com/Exerqtor/Voron/tree/6831a71b915dd4eebb9db524d54a9e1a82e21289/Mods/fume_pack>
 版：6831a71b915dd4eebb9db524d54a9e1a82e21289 / 原設計を照合した参考commit。使用形状はSIBOOR配布版／300mm STEP SHA256で識別。
 適用範囲：SIBOOR本体に含まれるドア・フィルターの原作者クレジット。参考commitからCADを追加取得していません。
 ライセンス：原設計 GPL-3.0。SIBOOR版の変更範囲・対応版は未確定。
@@ -164,7 +164,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## Sherpa Mini / Annex Engineering
 
 作者：Anlin / Annex Engineering
-配布元・参考元：https://github.com/Annex-Engineering/Sherpa_Mini-Extruder/tree/e95e98dcb83f523c33f022acfd5be4893082ae3c
+配布元・参考元：<https://github.com/Annex-Engineering/Sherpa_Mini-Extruder/tree/e95e98dcb83f523c33f022acfd5be4893082ae3c>
 版：e95e98dcb83f523c33f022acfd5be4893082ae3c / Xol内蔵r16と、同commitのCAD/sherpa_mini_release_2_rev1.STEP（Release 2 Rev1 / a3 r17）。取得SHA256: 4191b448e17622d4d29d95c8d5237f4a4f4c74aef5d128862d2f7b83e5192ea2。
 適用範囲：Xol内蔵r16と、Annex原本のSherpa Mini Release 2 Rev1。Short/Long idler・K frontを分離して配置。
 ライセンス：ANNEX ENGINEERING HARDWARE AND SOFTWARE EULA（別条件）
@@ -191,7 +191,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## Phaetus Dragon SF / ST
 
 作者：Phaetus
-配布元・参考元：https://github.com/Phaetus/Dragon-ST/tree/00bcd5c833634a5bf1db4af16baadc1ee57d254e
+配布元・参考元：<https://github.com/Phaetus/Dragon-ST/tree/00bcd5c833634a5bf1db4af16baadc1ee57d254e>
 版：00bcd5c833634a5bf1db4af16baadc1ee57d254e / 取得STEP SHA256: c04c6e0b9840307214a64afa795ca76d4a479e9dba802c01ed21273f7f2e6ef2
 適用範囲：SB / Xolに対応するメーカー形状。
 ライセンス：README: personal use only / commercial use prohibited
@@ -201,7 +201,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## Phaetus Dragon HF
 
 作者：Phaetus
-配布元・参考元：https://github.com/Phaetus/Dragon-HF/tree/b2a8a226539c826e9543f87b136d7d26afa7cccf
+配布元・参考元：<https://github.com/Phaetus/Dragon-HF/tree/b2a8a226539c826e9543f87b136d7d26afa7cccf>
 版：b2a8a226539c826e9543f87b136d7d26afa7cccf / 取得STEP SHA256: 8e23c8a9f3c6f1d9d28d3691e87bbad11917efbcc957043b956ebd7817ef9a5a
 適用範囲：SB / Xolに対応するメーカー形状。
 ライセンス：README: personal use only / commercial use prohibited
@@ -211,7 +211,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## VORON Afterburner / E3D V6 CAD
 
 作者：VoronDesign / E3D
-配布元・参考元：https://github.com/VoronDesign/Voron-Afterburner/tree/9ebb6bc38ac3a73d513c1d4beb0f88e9061c9073
+配布元・参考元：<https://github.com/VoronDesign/Voron-Afterburner/tree/9ebb6bc38ac3a73d513c1d4beb0f88e9061c9073>
 版：9ebb6bc38ac3a73d513c1d4beb0f88e9061c9073 / Afterburner_Assembly.step SHA256: 00613b8e448d663dee0673cfb1a9c2b826e33fc4e6dfdb56ba88d2e28e664eb5
 適用範囲：公式アセンブリ内の1.75 mm V6本体、ノズル、ヒーター、ヒートブレーク。SB用マウントと組合せ。
 ライセンス：GPL-3.0
@@ -221,7 +221,7 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 ## Trident Bed Fans
 
 作者：CannedBass（原案: Andrew Ellis）
-配布元：https://github.com/VoronDesign/VoronUsers/tree/8e5067f4f6457da8a552983dd210ec48c40be2ca/printer_mods/CannedBass/Trident_Bed_Fans
+配布元：<https://github.com/VoronDesign/VoronUsers/tree/8e5067f4f6457da8a552983dd210ec48c40be2ca/printer_mods/CannedBass/Trident_Bed_Fans>
 版：8e5067f4f6457da8a552983dd210ec48c40be2ca / 5015_Bed_Fan_Mount_Trident.step SHA256: 6b9c20ce3fddab6870f77e9c6dbf0d2e5a0cf7391931c0537e8d0299966c1717
 適用範囲：SIBOOR / VORON Trident 350のベッド支持フレームに5015ブロワー2基を追加。
 ライセンス：GPL-3.0
@@ -243,20 +243,19 @@ SIBOORのキットマニュアルが原設計を参照。使用したSTLの版�
 
 ## Galileo 2 / G2E 単体
 
-作者：JaredC01。取得commit 98f8a37944d7277cd37231776400553cc402219f。配布元 https://github.com/JaredC01/Galileo2 。GPL-3.0（原文：../site/licenses/galileo2/LICENSE）。標準PTFE入口・3穴チェーンアンカーを選択し、CAN基板は省略。SB/R2の比較用構成と専用マウントを使うXol/G2SA構成も登録。干渉が残る組み合わせは構成ごとに交差体積を表示。CNCへのG2E取付は未登録。
+作者：JaredC01。取得commit 98f8a37944d7277cd37231776400553cc402219f。配布元 <https://github.com/JaredC01/Galileo2> 。GPL-3.0（原文：../site/licenses/galileo2/LICENSE）。標準PTFE入口・3穴チェーンアンカーを選択し、CAN基板は省略。SB/R2の比較用構成と専用マウントを使うXol/G2SA構成も登録。干渉が残る組み合わせは構成ごとに交差体積を表示。CNCへのG2E取付は未登録。
 
 ## 機種別の固定フレームMod
 
 Disco XXLはSIBOOR / VORON Trident 350ではZ480 mm、VORON V2.4 350ではZ510 mmの上部2020フレーム下面に配置。V2.4のZガントリーとは別の固定フレームへ登録し、LEDと光源を同じ配置に保ちます。
 
-Sturdy Handlesの作者はjeoje。配布元 https://github.com/VoronDesign/VoronUsers/tree/8e5067f4f6457da8a552983dd210ec48c40be2ca/printer_mods/jeoje/Sturdy_Handles 。取得commit 8e5067f4f6457da8a552983dd210ec48c40be2ca / 原本SHA256 a1b006652e8a1005e7b4871fc089cb373136cacf3cd197d80b76f946c644caec 。GPL-3.0（原文: ../site/licenses/sturdy_handles/LICENSE.md）。M5原設計の本体2個を表示し、参考押出材と印刷台上の複製を除外。標準2020プロファイルとの接触リップを約2.6133 mm³／個だけ逃がすフィット調整を実施。取付軸と外寸を保ち、締結部品は省略。作者BOMは各ハンドルにM5x12 SHCSとM5 Tナットを各2個。強度・耐荷重は計算していません。
-
+Sturdy Handlesの作者はjeoje。配布元 <https://github.com/VoronDesign/VoronUsers/tree/8e5067f4f6457da8a552983dd210ec48c40be2ca/printer_mods/jeoje/Sturdy_Handles> 。取得commit 8e5067f4f6457da8a552983dd210ec48c40be2ca / 原本SHA256 a1b006652e8a1005e7b4871fc089cb373136cacf3cd197d80b76f946c644caec 。GPL-3.0（原文: ../site/licenses/sturdy_handles/LICENSE.md）。M5原設計の本体2個を表示し、参考押出材と印刷台上の複製を除外。標準2020プロファイルとの接触リップを約2.6133 mm³／個だけ逃がすフィット調整を実施。取付軸と外寸を保ち、締結部品は省略。作者BOMは各ハンドルにM5x12 SHCSとM5 Tナットを各2個。強度・耐荷重は計算していません。
 
 ## 選択できるベッドプローブ
 
 ### Beacon RevD / RevH
 
-作者：Beacon。配布元：https://github.com/beacon3d/docs/tree/bb8e34c6fd7fb3b200c3a2688fee9f4ce8c76278/mcad/beacon。取得commit：bb8e34c6fd7fb3b200c3a2688fee9f4ce8c76278。
+作者：Beacon。配布元：<https://github.com/beacon3d/docs/tree/bb8e34c6fd7fb3b200c3a2688fee9f4ce8c76278/mcad/beacon。取得commit：bb8e34c6fd7fb3b200c3a2688fee9f4ce8c76278。>
 
 版：RevD SHA256 186f190756af36c45ed8ed55347c8a6bef18a8a1b7b5569e1fef73486c025bd7 / RevH SHA256 248898016e4b03f387b32c5cb73e6c124ae0039d84a4b0b5fe651eea07460470。
 
@@ -268,7 +267,7 @@ Sturdy Handlesの作者はjeoje。配布元 https://github.com/VoronDesign/Voron
 
 ### Cartographer V1–V3 / V4
 
-作者：Cartographer3D。配布元：https://github.com/Cartographer3D/cartographer-probe/tree/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20Probes。取得commit：bf01749f16f239b5310aaf03e96b18e9dfb9b832。
+作者：Cartographer3D。配布元：<https://github.com/Cartographer3D/cartographer-probe/tree/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20Probes。取得commit：bf01749f16f239b5310aaf03e96b18e9dfb9b832。>
 
 版：V1–V3 SHA256 05ae752f2e0deb8f8927d9dec9d6432fd127d24d89f03a425d90fea450b2498f / V4 SHA256 7496da4afc02fd3bfe8eec6fcdee32f5b6c41682f26b159305d24595222e6111。
 
@@ -280,7 +279,7 @@ Sturdy Handlesの作者はjeoje。配布元 https://github.com/VoronDesign/Voron
 
 ### Stealthburner Beacon carriage
 
-作者：Trails / ANNEX Engineering Team。配布元：https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/c73acdda56535898fb3aef6b62998388e0c51670/Printers/Non_Annex_Printers/VORON_Printers/VORON_V2dot4/annex_dev-stealthburner_beacon_x_carriage。取得commit：c73acdda56535898fb3aef6b62998388e0c51670。
+作者：Trails / ANNEX Engineering Team。配布元：<https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/c73acdda56535898fb3aef6b62998388e0c51670/Printers/Non_Annex_Printers/VORON_Printers/VORON_V2dot4/annex_dev-stealthburner_beacon_x_carriage。取得commit：c73acdda56535898fb3aef6b62998388e0c51670。>
 
 版：beacon_sb_xcarriage.STEP SHA256 ed6ea6778deb604c0c23eeeffc5f07b482e0f0b80c4c813c59a2309a56a58a9f。
 
@@ -298,10 +297,9 @@ Xol / Dragon SF–HFではBeacon RevD、Cartographer V1–V3・V4の金属除外
 
 R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加し、STEP保存・読み戻し後の輪郭エラーを修正。UHFで元CADのベッド面がノズルを越える構成は、表示上の基準ベッド位置を下げて0.2 mmの間隔を確保。ベッド・ガイドブロック・付属部品へ同じ移動量を適用します。実機のZオフセット設定は含みません。
 
-
 ### Monolith Gantry R1
 
-作者：Monolith3D。配布元：https://github.com/Monolith3D/Monolith_Gantry/tree/5b729c2f96bdbd24ea180a80476364727444c038。使用commit：5b729c2f96bdbd24ea180a80476364727444c038。
+作者：Monolith3D。配布元：<https://github.com/Monolith3D/Monolith_Gantry/tree/5b729c2f96bdbd24ea180a80476364727444c038。使用commit：5b729c2f96bdbd24ea180a80476364727444c038。>
 
 適用範囲：250/350 mmガントリー単体。Trident/V2.4、Printed/Sheet metal、2WD/AWD、6/9 mmの32構成。
 
@@ -311,10 +309,9 @@ R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加�
 
 ガントリーの設計データはCC BY-NC-SA 4.0。別リポジトリのクランプはGPL-3.0。ビューアーコードのGPLを全モデルへ一括適用しません。
 
-
 ### Monolith Belt Clamps
 
-作者：Monolith3D。配布元：https://github.com/Monolith3D/Toolheads_for_Monolith/tree/e205bff37e405bfbeb40fe2d8f46dbeda45c7b73。使用commit：e205bff37e405bfbeb40fe2d8f46dbeda45c7b73。
+作者：Monolith3D。配布元：<https://github.com/Monolith3D/Toolheads_for_Monolith/tree/e205bff37e405bfbeb40fe2d8f46dbeda45c7b73。使用commit：e205bff37e405bfbeb40fe2d8f46dbeda45c7b73。>
 
 適用範囲：Milled・SLMクランプの部品単体CAD。ガントリーとは別のライセンス。
 
@@ -322,10 +319,9 @@ R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加�
 
 変更：原寸の表示用変換・配色。ヘッドへの取付は未登録。
 
-
 ### MetalTap
 
-作者：Vitalii3D-xyz。配布元：https://github.com/Vitalii3D-xyz/MetalTap/tree/62603ad970bc9fd836c8d8f24eed7e084a324a43。使用commit：62603ad970bc9fd836c8d8f24eed7e084a324a43。
+作者：Vitalii3D-xyz。配布元：<https://github.com/Vitalii3D-xyz/MetalTap/tree/62603ad970bc9fd836c8d8f24eed7e084a324a43。使用commit：62603ad970bc9fd836c8d8f24eed7e084a324a43。>
 
 適用範囲：配線式光学センサーとOptoTap式の原本組立を別表示。
 
@@ -333,10 +329,9 @@ R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加�
 
 変更：重複していたセンサー・アダプターの選択肢を分離。原寸の表示用変換・配色。機体への取付・TAP動作は未検証。
 
-
 ### Vitalii Lightweight X Carriage
 
-作者：Vitalii3D-xyz。配布元：https://github.com/Vitalii3D-xyz/VoronLightweightXCarriage/tree/8dce8deed9f481724058dfef3fe2beecdd8897e1。使用commit：8dce8deed9f481724058dfef3fe2beecdd8897e1。
+作者：Vitalii3D-xyz。配布元：<https://github.com/Vitalii3D-xyz/VoronLightweightXCarriage/tree/8dce8deed9f481724058dfef3fe2beecdd8897e1。使用commit：8dce8deed9f481724058dfef3fe2beecdd8897e1。>
 
 適用範囲：SB・Xol用キャリッジ原本。SBは6ホットエンドの比較用試着を登録。
 
@@ -344,10 +339,9 @@ R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加�
 
 変更：MGN12/SB穴軸で剛体配置。SIBOOR由来CW2カバー等とのCAD干渉を表示。プローブ用スペーサーと機体全域は未検証。
 
-
 ### DoubleT / Vitalii V2.4 Aluminum Gantry
 
-作者：DoubleT / thiagolocatelli / 3DPrintingMods（原設計）、Vitalii3D-xyz（V2.4版）。配布元：https://github.com/Vitalii3D-xyz/DoubleT-2.4AluminumG/tree/8c4ed183c02db7814ed02d234e20bfdea77dd892。使用commit：8c4ed183c02db7814ed02d234e20bfdea77dd892。
+作者：DoubleT / thiagolocatelli / 3DPrintingMods（原設計）、Vitalii3D-xyz（V2.4版）。配布元：<https://github.com/Vitalii3D-xyz/DoubleT-2.4AluminumG/tree/8c4ed183c02db7814ed02d234e20bfdea77dd892。使用commit：8c4ed183c02db7814ed02d234e20bfdea77dd892。>
 
 適用範囲：AB・XY・フロントアイドラーの原本組立。梁・モーター・ベルトを含まない。350 mm機への置換は未登録。
 
@@ -355,14 +349,13 @@ R2印刷キャリッジの内側面に0.002 mm幅の局所的な逃げを追加�
 
 変更：原寸の表示用変換・配色。
 
-READMEが原設計のhttps://github.com/3DPrintingMods/VoronTrident-AluminumG を案内しています。使用形状は上記Vitalii版commit。
-
+READMEが原設計の<https://github.com/3DPrintingMods/VoronTrident-AluminumG> を案内しています。使用形状は上記Vitalii版commit。
 
 Monolithのベルトは原本の切断端・経路外形を保持し、2 mm周期の独立した可視化用歯列を作成。STEPでは半歯ごとの曲線面として表現。製造用のGT2歯形仕様・切断長・弾性伸びは再現しません。通常TridentとSIBOORの延長区間は、それぞれの原本の歯付き区間を繰り返して構成。
 
 ### StealthChanger V1.1 / BT123 Split Keeper
 
-作者：DraftShift。配布元：https://github.com/DraftShift/StealthChanger/tree/50e3c769297b273ac390fb33b455aa7f4dfe3099。使用commit：50e3c769297b273ac390fb33b455aa7f4dfe3099。
+作者：DraftShift。配布元：<https://github.com/DraftShift/StealthChanger/tree/50e3c769297b273ac390fb33b455aa7f4dfe3099。使用commit：50e3c769297b273ac390fb33b455aa7f4dfe3099。>
 
 適用範囲：MGN12接続部、9種の専用バックプレート、6/9 mmと反転経路の4仕様。BT123の9 mm・Monolith専用Keeperを使用。
 
@@ -372,7 +365,7 @@ Monolithのベルトは原本の切断端・経路外形を保持し、2 mm周�
 
 ### ModularDock
 
-作者：DraftShift。配布元：https://github.com/DraftShift/ModularDock/tree/597fad34f3a1233ed1c182ec221a8da9ba68ac33。使用commit：597fad34f3a1233ed1c182ec221a8da9ba68ac33。
+作者：DraftShift。配布元：<https://github.com/DraftShift/ModularDock/tree/597fad34f3a1233ed1c182ec221a8da9ba68ac33。使用commit：597fad34f3a1233ed1c182ec221a8da9ba68ac33。>
 
 適用範囲：8種のドックを原本の別組立として表示。バックプレートへのドッキング・機体取付は未登録。
 
@@ -384,7 +377,7 @@ Xolのベースは同commitのSTLs/XOL/Base.stlを使用し、元の2020ドッ�
 
 ### TapChanger
 
-作者：viesturz。配布元：https://github.com/viesturz/tapchanger/tree/a7b19f99a2ef520485082251917403a5bfd542cd。使用commit：a7b19f99a2ef520485082251917403a5bfd542cd。
+作者：viesturz。配布元：<https://github.com/viesturz/tapchanger/tree/a7b19f99a2ef520485082251917403a5bfd542cd。使用commit：a7b19f99a2ef520485082251917403a5bfd542cd。>
 
 適用範囲：Rods / Plates / Liftbar、SB・MiniSB・Dragon Burner・Xolを原本の別構成として表示。Xolは実験版。
 
@@ -400,7 +393,7 @@ TapChanger SB/Rodsの参考ホットエンドとCW2本体は、STEPの読み戻�
 
 ### JabberWocky Rev82 / completed toolheads
 
-作者：kinematicdigit。配布元：https://github.com/kinematicdigit/Jabberwocky/tree/6a80220dccd343f6071043eac15a0db634559ebe。使用commit：6a80220dccd343f6071043eac15a0db634559ebe。
+作者：kinematicdigit。配布元：<https://github.com/kinematicdigit/Jabberwocky/tree/6a80220dccd343f6071043eac15a0db634559ebe。使用commit：6a80220dccd343f6071043eac15a0db634559ebe。>
 
 配布条件：CC-BY-SA-4.0。原文：[LICENSE.md](../site/licenses/jabberwocky/LICENSE.md)。完成ヘッド、専用Compound driveとConchは原寸のまま使用。外部配線参照、印刷サポート、代替プローブを省略。StealthChangerでは光学センサーと干渉する標準NH36ブラケットと基板を省略し、機械部だけを表示。
 
@@ -458,7 +451,6 @@ The displayed cleaning assemblies preserve native reference coordinates. Alterna
 
 Printed appearance corrections are explicit part identities in `site/viewer/appearance-role.mjs`; they change display colors only. Stock SB and R2 printed parts share these assignments across pages. Hardware and transparent LED lenses retain their own materials.
 
-
 ### Machine head registration / MGN12
 
 V2.4 250/300/350のR2・LDO CNC参照、およびTrident 350の登録ガントリーへ、元のMGN12H固定穴（20 × 20 mm）を基準にヘッドを配置。固定SB/Xolと、6/9 mmに対応するStealthChangerのSB/Xol/JabberWockyを使用。上記の各原本commitと部品ごとのライセンスを維持。参照用リニアガイド・ドック・旧ヘッドは重複表示しない。形状は原寸を維持。
@@ -466,7 +458,6 @@ V2.4 250/300/350のR2・LDO CNC参照、およびTrident 350の登録ガント�
 INDXは6 mm機体のレール取付プレビュー。取付板の5 mm厚に対し、Voron Tridentの元CADのM3x8ねじ4本を剛体移動して使用。ねじはVoronDesign/Voron-Tridentの既載commit、GPL-3.0。レール穴、ねじ軸、取付板とブロックの登録姿勢を照合。ベルト固定具、機体側ドック、ホーミング接点、全移動域の接触は未登録・未検証。プリント可能な完成構成とは扱わない。
 
 追加のネイティブねじと取付登録データは独立したsource archiveに収録。他のヘッド・交換機構の原本は既載source archiveに継続収録。
-
 
 ### Stealthburner extruder and CPAP references
 
@@ -516,7 +507,6 @@ Tricorn Long and Short use [tricornhotend/tricornhotend.com](https://github.com/
 
 [Chube manufacturer integration references](https://chubehotend.com/integrations) provide Compact CAD and Air/Conduction integration surfaces. Retrieved documentation does not state redistribution terms (`site/licenses/chube/NOTICE.txt`); no permissive license is assigned to hotend geometry. Compact uses the dedicated [VoronDesign SB CW2 cartridge](https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/CAD/Printheads), GPL-3.0, and [A4T dedicated Xol-carriage cowling and duct](https://github.com/Armchair-Heavy-Industries/A4T/tree/e1fc27113bb3061458f528db837d517c35e0b88a), CC-BY-NC-SA-4.0. A4T is a support-omitted model: six separate source manufacturing supports are excluded. Remaining bodies retain dimensions. At the v18 snapshot, A4T extruder/fans/LEDs/carriage/probe/mount screws and Sphinx extruder/CPAP hardware were absent. The v19 Sphinx additions are described below. Native static intersections and source integration-body overlaps are retained and disclosed. Air/Conduction are open integration-surface references without machine/head registration. TeaKettle source variants remain separate from current Chube Compact.
 
-
 ## Sphinx tLW assembled hardware
 
 The original [riley-github/Sphinx-Toolhead](https://github.com/riley-github/Sphinx-Toolhead/tree/74ce5f58fcb06aea2ddcbb48b09610cbbfbfa180) Voron/Monolith mounting parts use CC-BY-NC-SA-4.0 (`site/licenses/sphinx/LICENSE`). Eight assembled references use the author's dedicated Tricorn or Rapido UHF body, the existing Tricorn Long source, and the original [Annex Engineering Sherpa Mini Release 2 Rev1](https://github.com/Annex-Engineering/Sherpa_Mini-Extruder/tree/e95e98dcb83f523c33f022acfd5be4893082ae3c), source STEP SHA256 `4191b448e17622d4d29d95c8d5237f4a4f4c74aef5d128862d2f7b83e5192ea2`. Annex's EULA remains in `site/licenses/annex_license/LICENSE.md`; embedded hardware terms are separate. Standard-front Short/Long idlers are alternatives. The K-front intersects the original head prints and is excluded; the installed printed housing is not a CNC product model.
@@ -531,13 +521,11 @@ Four Voron variants have a 6 mm machine placement at native MGN12H mating planes
 
 [MadMax](https://github.com/zruncho3d/madmax/tree/277a63cbb696f937fbf9d883a8d8c46a658cd6d9), v11 MGN9H/MGN12H interfaces and Andrewmcgr Xol/A4T user Mod, retains GPL-3.0 in `site/licenses/madmax/LICENSE`. The registered Xol / Sherpa Mini / Rapido 2 UHF assembly uses separately pinned Xol and manufacturer references. Original VORON M3x8 rail screws are placed at native counterbores. Source interfaces, static bodies and machine placement are distinct from cutter actuation, docking, full travel and sensor clearance, which remain unverified. See [assembly scope](CUTTERS_MADMAX.md).
 
-
 ## INDX passive-tool bank and Monolith mating interfaces
 
 [BondtechAB/INDX](https://github.com/BondtechAB/INDX/tree/da2036945ca0d09f44704f78f1681497bcca6b48), GPL-3.0, supplies the Smart Head, native passive tool and 2020 community dock. The bank uses one active tool and distinct parked tools at 41 mm pitch. Seven nozzle specifications share the simplified external reference; individual bores are not modeled. Original dock hardware and tool dimensions are retained. Additional crossbars use the original VoronDesign/Voron-2 GPL-3.0 profile at `a192410e27ea345644ae5c4b29b4c9c40cbe1a73`. See [INDX scope](INDX.md) and the v22 editable source archive. Trident generic placement remains a non-printable reference because nozzle contact exceeds the native Z guide limit.
 
 Monolith keepers are translated with their corresponding shuttle and registered using the native mating face around the fixing axes, rather than a bounding-box lip. Their existing DraftShift/StealthChanger GPL-3.0 and BT123 credits remain. Reference rails and blocks share that datum. Fixed Sphinx heads retain the separate Sphinx, Annex, Tricorn and acquired hotend terms above. Mounting and static contact checks do not certify the full belt clamp path, docking or complete travel.
-
 
 ## Micron native assemblies
 
@@ -545,11 +533,9 @@ Monolith keepers are translated with their corresponding shuttle and registered 
 
 The v23 V2.4 door source archive replaces native latch placements for 250/300/350 printed and LDO references, preserving the VoronDesign GPL-3.0 source and original rigid geometry. Remaining parts are in the full v13 archive.
 
-
 ## Trident 250 / 300 native size assemblies
 
 The v24 archive retains [VoronDesign/Voron-Trident](https://github.com/VoronDesign/Voron-Trident/tree/a8628f48546948ce1fc15511b7765b7f31f80722), GPL-3.0, and embedded component credits. Size-specific bases and R2 gantries preserve rigid hardware and native rail hole pitch. Browser handle placements retain their original source author and terms; original native handles remain in the earlier source archive. Existing toolbank limits are unchanged. See [geometry and viewer checks](TRIDENT_SIZE_COLOR_QA.md).
-
 
 ## Crossant-235
 
@@ -569,7 +555,6 @@ The MIT-licensed Three.js OrbitControls include local pointer-cancellation and c
 
 The four printed-shuttle/Keeper modules use native M3×12 bolt geometry from [DraftShift/StealthChanger](https://github.com/DraftShift/StealthChanger/tree/50e3c769297b273ac390fb33b455aa7f4dfe3099) DragonBurner backplate CAD and native M3×14 geometry from [PrintersForAnts/AntHead](https://github.com/PrintersForAnts/AntHead/tree/249f64302ed1f159e79e3ee07682fea8e0644288) Papilio assembly CAD. GPL-3.0 and embedded component terms remain applicable. Original preferred CAD, current editable assemblies, native bodies and retained licenses accompany viewer-v47. Printed source geometry is unchanged. Monolith's selected bolt length is a CAD depth reference; residual head/counterbore interference and unverified mechanical requirements are disclosed in [attachment scope](STEALTHCHANGER_MOUNTS.md).
 
-
 ## E3NG hotend changer
 
 [emna2881/E3NG-Toolchanger](https://github.com/emna2881/E3NG-Toolchanger/tree/25d250b3b00b146769373d5a5c3e9e446ebff19c), commit `25d250b3b00b146769373d5a5c3e9e446ebff19c`, supplies the public `E3NG_ToolChanger_MOD1 v10` Beta assembly. The upstream project declares CC BY-NC-SA 4.0; its full license is retained in `site/licenses/e3ng_toolchanger/LICENSE`. E3NG is designed by [RH3D](https://github.com/RH3D/E3NG/tree/095edee85eb7c813bdcdc25489f05e884cccad91). Upstream credits [zruncho3d/Nudge](https://github.com/zruncho3d/nudge) and the extruder inspiration [Irbis3D/MedusaHC](https://github.com/Irbis3D/MedusaHC). Embedded purchased hardware retains its individual original terms; the mod license does not grant a new permissive license to those components.
@@ -586,9 +571,7 @@ The complete RH3D v1.2 / v1.2S printer assembly is not included. That CAD is dis
 
 [Yavoth assembly scope](YAVOTH.md) documents the original chirpy2605 Yavoth v1 cowls and width-specific Alternative Voron Mounts carriages, pinned to cc2e749d09d7f24418f9f8c73c90bcefb1e29584. The preview includes original Sherpa Mini R2, Orbiter V2, Rapido v1 HF/UHF and fan reference bodies. GPL-3.0, CC BY-NC-SA 4.0, the Annex EULA and embedded hardware terms retain their component-specific scopes; no common CAD license is assigned. Native contact measurements, omitted support/fasteners and preferred author CAD accompany the viewer-v59 source archive. See site/licenses/yavoth_assembly/NOTICE.md.
 
-
 The Crossant Backpack covers are derived from `DXFs/Backpack/leftpanel.dxf`, `rightpanel.dxf` and `rearpanel.dxf` at the revision above. Their outer profiles are unscaled; side panels are transparent and the rear is opaque. Preview spacers avoid gantry-end contact, the rear panel is registered to the existing filter gap and cable ports, eight filter holes match native screw axes, and Grommet C is moved into its DXF slot. DXFs do not specify thickness; 2/3/4 mm is selectable for visualization. Additional panel screws/nuts and physical mounting remain outside the verified scope. Front/top DXFs are absent.
-
 
 ## Trinity Crossbow
 

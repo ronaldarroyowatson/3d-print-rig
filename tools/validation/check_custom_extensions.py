@@ -81,14 +81,24 @@ def main():
         fail('Missing custom/manifest.json')
     if not COMPONENTS.is_file():
         fail('Missing custom/components/custom-components.json')
+    manifest = load_json(MANIFEST)
+    validate_manifest(manifest)
     if not SITE_COMPONENTS.is_file():
         fail('Missing site/CUSTOM_COMPONENTS.json')
-    validate_manifest(load_json(MANIFEST))
     components = load_json(COMPONENTS)
     validate_components(components)
     site_components = load_json(SITE_COMPONENTS)
     if site_components != components:
         fail('site/CUSTOM_COMPONENTS.json must mirror custom/components/custom-components.json')
+    for row in manifest.get('generated_files', []):
+        source = CUSTOM / row['source']
+        target = ROOT / 'site' / row['target']
+        if not source.is_file():
+            fail('Missing custom generated file source: ' + row['source'])
+        if not target.is_file():
+            fail('Missing generated file in site/: ' + row['target'])
+        if source.read_text(encoding='utf-8') != target.read_text(encoding='utf-8'):
+            fail(f'site/{row["target"]} must mirror custom/{row["source"]}')
     print('Custom extension validation passed.')
 
 

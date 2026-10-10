@@ -1,0 +1,70 @@
+{
+  "schema": "3d-print-rig-part-print-profiles-v1",
+  "version": "owner-custom-v2",
+  "parts": {
+    "PTFE_tube": {
+      "files": [
+        {
+          "file": "Not printable (consumable tube)",
+          "settings": "Cut to length from maintenance spec",
+          "notes": "Tracked for planning only; no STL/3MF source file."
+        }
+      ]
+    },
+    "CAN_cable": {
+      "files": [
+        {
+          "file": "Not printable (wiring harness)",
+          "settings": "Use wiring BOM and crimp spec",
+          "notes": "Tracked for planning only; no printable geometry."
+        }
+      ]
+    },
+    "Door_PC_480x470x3": {
+      "files": [
+        {
+          "file": "Not printable (polycarbonate enclosure panel)",
+          "settings": "Use 3 mm polycarbonate sheet; drill/cut from enclosure template",
+          "notes": "V2.4 side door panel stock material, not a printed part."
+        }
+      ]
+    },
+    "v24_01346": {
+      "files": [
+        {
+          "file": "Not printable (enclosure panel assembly)",
+          "settings": "Use panel BOM and enclosure cut template for this machine size",
+          "notes": "Mapped from V2.4 inspector selection to avoid blank metadata while mappings are expanded."
+        }
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "door-parts",
+      "match": {
+        "labelIncludes": "door"
+      },
+      "files": [
+        {
+          "file": "Use source path shown in inspector to locate STL/3MF",
+          "settings": "Default printed-part profile for your material",
+          "notes": "Generic rule: replace with exact part-key mapping after validation."
+        }
+      ]
+    },
+    {
+      "id": "panel-parts",
+      "match": {
+        "labelIncludes": "panel"
+      },
+      "files": [
+        {
+          "file": "Use source path shown in inspector to locate STL/3MF",
+          "settings": "Panel-dependent profile (material-specific)",
+          "notes": "Generic rule: replace with exact part-key mapping after validation."
+        }
+      ]
+    }
+  ]
+}

@@ -12,6 +12,10 @@
     {
       "source": "components/custom-components.json",
       "target": "CUSTOM_COMPONENTS.json"
+    },
+    {
+      "source": "components/part-print-profiles.json",
+      "target": "PART_PRINT_PROFILES.json"
     }
   ]
 }

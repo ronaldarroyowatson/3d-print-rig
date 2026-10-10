@@ -65,6 +65,7 @@
 | コア改変なしで拡張する構成案 | [Custom extension system](custom-extension-system.md) |
 | 追加予定部品のギャップ分析 | [Missing components](missing-components.md) |
 | 拡張レイヤー向けの検証フロー | [Validation system](validation-system.md) |
+| 部品選択・表示制御計画 | [Part roadmap](PART_INTERACTION_ROADMAP.md) |
 | 現在実装の棚卸し（構造・運用・検証） | [Current state analysis](current-state-analysis.md) |
 | Copilot標準への準拠監査（スコアカード） | [Copilot compliance report](copilot-compliance-report.md) |
 | 優先度付きリファクタ計画 | [Refactor backlog](refactor-backlog.md) |
@@ -72,4 +73,5 @@
 
 [プロジェクトREADMEに戻る](../README.md)
 
-- [SOVOL SV08](SOVOL.md): complete native CAD reference, XYZ motion, source scope and display controls.
+- [SOVOL SV08](SOVOL.md): complete native CAD reference, XYZ motion,
+  source scope and display controls.

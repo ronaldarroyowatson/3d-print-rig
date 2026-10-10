@@ -3,14 +3,14 @@
 Original authors: DW-Tas / Armchair Heavy Industries; VoronDesign for the
 native DIN562 square-nut reference. Assembly placements: 3D Print Rig.
 
-A4T: https://github.com/Armchair-Heavy-Industries/A4T
+A4T: <https://github.com/Armchair-Heavy-Industries/A4T>
 Revision e1fc27113bb3061458f528db837d517c35e0b88a, CC BY-NC-SA 4.0.
-Xol: https://github.com/Armchair-Heavy-Industries/Xol-Toolhead
+Xol: <https://github.com/Armchair-Heavy-Industries/Xol-Toolhead>
 Revision c00b13ef851d38fef6e295e18296650e1ca50d7e, CC BY-NC-SA 4.0;
 embedded component exceptions retained.
-Archetype: https://github.com/Armchair-Heavy-Industries/Archetype
+Archetype: <https://github.com/Armchair-Heavy-Industries/Archetype>
 Revision 152709791048d67aab45ea7b774cc16c2a25efd0, CC BY-NC-SA 4.0.
-Square nut: https://github.com/VoronDesign/Voron-Stealthburner
+Square nut: <https://github.com/VoronDesign/Voron-Stealthburner>
 Revision 8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b, GPL-3.0.
 
 The existing native A4T/Sherpa/fan/hotend assemblies remain separate.

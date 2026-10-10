@@ -50,10 +50,23 @@ Write-Host "Extracting pinned model bundle..."
 Expand-Archive -Path $zipPath -DestinationPath $outputPath -Force
 Remove-Item -Force $zipPath
 
-$customSource = Join-Path $root "custom\components\custom-components.json"
-$customTarget = Join-Path $outputPath "CUSTOM_COMPONENTS.json"
-if (Test-Path $customSource) {
-  Copy-Item -Force $customSource $customTarget
+$customManifestPath = Join-Path $root "custom\manifest.json"
+if (Test-Path $customManifestPath) {
+  $customManifest = Get-Content -Raw -Path $customManifestPath | ConvertFrom-Json
+  foreach ($generated in $customManifest.generated_files) {
+    if (-not $generated.source -or -not $generated.target) { continue }
+    $generatedSource = Join-Path (Join-Path $root "custom") $generated.source
+    $generatedTarget = Join-Path $outputPath $generated.target
+    if (Test-Path $generatedSource) {
+      Copy-Item -Force $generatedSource $generatedTarget
+    }
+  }
+} else {
+  $customSource = Join-Path $root "custom\components\custom-components.json"
+  $customTarget = Join-Path $outputPath "CUSTOM_COMPONENTS.json"
+  if (Test-Path $customSource) {
+    Copy-Item -Force $customSource $customTarget
+  }
 }
 
 New-Item -ItemType File -Path (Join-Path $outputPath ".nojekyll") -Force | Out-Null
